@@ -1,0 +1,8 @@
+<h2>Events</h2>
+<ul>
+    <li *ngFor="let event of events">
+        <h2>{{event.title}}</h2>
+        <h3>{{event.date | date: 'EEEE MMMM d, y h:m a'}}</h3>
+        <p>{{event.content}}</p>
+    </li>
+</ul>

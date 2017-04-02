@@ -1,0 +1,10 @@
+<!-- taken from https://scotch.io/tutorials/responsive-carousel-component-with-angular-2 -->
+<div class="carousel">
+<ul class="slides">
+    <li *ngFor="let sponsor of sponsors">
+        <a href="{{sponsor.linkUrl}}">
+        <img src="{{sponsor.logoUrl}}">
+        </a>
+    </li>
+</ul>
+</div>
