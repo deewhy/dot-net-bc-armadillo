@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navigation/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 import { EventService } from './services/event.service';
 import { SponsorService } from './services/sponsor.service';
 import { HomeComponent } from './homepage/home.component';
@@ -18,7 +19,8 @@ import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
     NavBarComponent,
     HomeComponent,
     EventViewerComponent,
-    SponsorViewerComponent
+    SponsorViewerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
