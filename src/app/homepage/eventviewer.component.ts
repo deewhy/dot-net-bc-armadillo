@@ -5,7 +5,8 @@ import { EventService } from '../services/event.service';
 
 @Component({
   selector: 'event-viewer',
-  templateUrl: './eventviewer.component.html'
+  templateUrl: './eventviewer.component.html',
+  styleUrls: ['./eventviewer.component.css']
 })
 export class EventViewerComponent implements OnInit {
 
