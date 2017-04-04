@@ -44,7 +44,7 @@ import { MemberService } from './services/member.service';
       path: 'home', component: HomeComponent
     },
     {
-      path: 'register', component: RegistrationComponent
+      path: 'registration', component: RegistrationComponent
     },
     {
       path: 'admin', component: AdminComponent
