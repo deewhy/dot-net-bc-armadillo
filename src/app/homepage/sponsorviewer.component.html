@@ -1,0 +1,10 @@
+<div class="carousel">
+    <p>Sponsor stuff</p>
+    <ul class="slides">
+        <li *ngFor="let sponsor of sponsors">
+            <a href="{{sponsor.linkUrl}}">
+                <img src="{{sponsor.logoUrl}}">
+            </a>
+        </li>
+    </ul>
+</div>
