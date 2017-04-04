@@ -13,6 +13,7 @@ import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { MemberProfileComponent } from './memberprofile/memberprofile.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 import { EventService } from './services/event.service';
 import { SponsorService } from './services/sponsor.service';
@@ -30,7 +31,8 @@ import { MemberService } from './services/member.service';
     FooterComponent,
     RegistrationComponent,
     AdminComponent,
-    MemberProfileComponent
+    MemberProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
