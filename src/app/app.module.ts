@@ -7,11 +7,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navigation/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { EventService } from './services/event.service';
-import { SponsorService } from './services/sponsor.service';
 import { HomeComponent } from './homepage/home.component';
 import { EventViewerComponent } from './homepage/eventviewer.component';
 import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { MemberProfileComponent } from './memberprofile/memberprofile.component';
+import { AdminComponent } from './admin/admin.component';
+
+import { EventService } from './services/event.service';
+import { SponsorService } from './services/sponsor.service';
+import { AuthenticationService } from './services/authentication.service';
+import { MemberService } from './services/member.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +27,10 @@ import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
     HomeComponent,
     EventViewerComponent,
     SponsorViewerComponent,
-    FooterComponent
+    FooterComponent,
+    RegistrationComponent,
+    AdminComponent,
+    MemberProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -32,12 +42,24 @@ import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
     },
     {
       path: 'home', component: HomeComponent
+    },
+    {
+      path: 'register', component: RegistrationComponent
+    },
+    {
+      path: 'admin', component: AdminComponent
+    },
+    {
+      path: 'profile', component: MemberProfileComponent
     }
     ])
   ],
-  providers: [EventService,
-              SponsorService
-              ],
+  providers: [
+    EventService,
+    SponsorService,
+    AuthenticationService,
+    MemberService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
