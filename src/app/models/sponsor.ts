@@ -1,5 +1,5 @@
 export class Sponsor {
-    logoUrl: string;
-    linkUrl: string;
-    name: string;
+    sponid: number;
+    sponname: string;
+    sponimg: string;
 }
