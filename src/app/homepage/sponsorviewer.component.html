@@ -1,10 +1,9 @@
-<div class="carousel">
-    <p>Sponsor stuff</p>
-    <ul class="slides">
-        <li *ngFor="let sponsor of sponsors">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div *ngFor="let sponsor of sponsors; let index = index" class="item" [ngClass]="{active: index == 0}">
             <a href="{{sponsor.sponlink}}">
                 <img src="{{sponsor.sponimg}}">
             </a>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
