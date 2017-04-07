@@ -1,17 +1,16 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, RouterStateSnapshot, CanActivate } from '@angular/router';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, CanActivate, Router } from '@angular/router';
 import { Headers, Http, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs/Observable';
 
 import { Subject } from '../abstracts/subject';
-
 @Injectable()
 export class AuthenticationService extends Subject implements CanActivate {
     private TOKEN_NAME: string = "zenithToken";
     private URL = 'http://dotnetbcbackend.azurewebsites.net/connect/token';
     
-    constructor(private http: Http) {
+    constructor(private http: Http, private router: Router) {
         super();
      }
 
@@ -51,10 +50,12 @@ export class AuthenticationService extends Subject implements CanActivate {
         this.notifyListeners();
     }
 
-    canActivate(
-        route: ActivatedRouteSnapshot,
-        state: RouterStateSnapshot
-    ): Observable<boolean> | Promise<boolean> | boolean {
-        return this.isLoggedIn();
+    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+        if (this.isLoggedIn()) {
+            return true;
+        } else {
+            this.router.navigate(['/home']);
+            return false;
+        }
     }
 }
