@@ -1,1 +1,5 @@
-login component content
+<form (ngSubmit)="onSubmit()">
+    <input type="text" class="form-control" [(ngModel)]="username" placeholder="Enter Username" name="username" required="" autofocus="" />
+    <input type="password" class="form-control" [(ngModel)]="password" placeholder="Enter Password" name="password" required="" />
+    <button class="btn btn-lg btn-danger btn-block" type="submit">Login</button>
+</form>
