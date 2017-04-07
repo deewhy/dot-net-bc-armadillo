@@ -4,12 +4,16 @@ import { Headers, Http, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs/Observable';
 
+import { Subject } from '../abstracts/subject';
+
 @Injectable()
-export class AuthenticationService implements CanActivate {
+export class AuthenticationService extends Subject implements CanActivate {
     private TOKEN_NAME: string = "zenithToken";
     private URL = 'http://dotnetbcbackend.azurewebsites.net/connect/token';
-
-    constructor(private http: Http) { }
+    
+    constructor(private http: Http) {
+        super();
+     }
 
     authenticate(username: string, password: string): void {
         let creds = 'username=' + username + '&password=' + password + '&grant_type=password'
@@ -20,6 +24,7 @@ export class AuthenticationService implements CanActivate {
             .then(r => {
                 let user = r.json();
                 this.setToken(user["access_token"]);
+                this.notifyListeners();
             });
     }
 
@@ -43,6 +48,7 @@ export class AuthenticationService implements CanActivate {
 
     logOut(): void {
         localStorage.setItem(this.TOKEN_NAME, "");
+        this.notifyListeners();
     }
 
     canActivate(

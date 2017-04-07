@@ -2,7 +2,9 @@
     <p>Sponsor stuff</p>
     <ul class="slides">
         <li *ngFor="let sponsor of sponsors">
-            <img src="{{sponsor.sponimg}}">
+            <a href="{{sponsor.sponlink}}">
+                <img src="{{sponsor.sponimg}}">
+            </a>
         </li>
     </ul>
 </div>
