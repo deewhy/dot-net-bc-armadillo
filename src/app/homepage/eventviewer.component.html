@@ -1,7 +1,47 @@
 <h2>Events</h2>
-<ul>
-    <li *ngFor="let event of events">
-        <h2>{{event.evloc}}</h2>
-        <h3>{{event.evpubdate | date: 'EEEE MMMM d, y h:m a'}}</h3>
-    </li>
-</ul>
+<table class="table table-striped">
+    <tr *ngFor="let event of events" >
+        <td>{{event.evbrief}}</td>
+        <td>{{event.evpubdate | date: 'EEEE MMMM d, y h:mm a'}}</td>
+        <td><button type="button" class="btn btn-warning btn-sm" 
+        data-toggle="modal" data-target="#myModal" (click)="viewEvent(event)">details</button>
+</td>
+    </tr>
+</table>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+        <div *ngIf="selectedEvent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">{{selectedEvent.evbrief}}</h4>
+        </div>
+        <div class="modal-body">
+            
+        <p>id: {{selectedEvent.evid}}</p>
+        <p>daytime: {{selectedEvent.evdayt}}</p>
+
+        <p>event date: {{selectedEvent.evdate}}</p>
+        <p>event time: {{selectedEvent.evtime}}</p>
+        <p>event location: {{selectedEvent.evloc}}</p>
+        <p>event description: {{selectedEvent.evbreifdesc}}</p>
+        <div [innerHTML]="selectedEvent.evdetail"></div>
+        <p>event public update{{selectedEvent.evpubdate}}</p>
+        
+        </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  

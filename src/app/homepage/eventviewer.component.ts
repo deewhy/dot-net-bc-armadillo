@@ -14,6 +14,7 @@ export class EventViewerComponent implements OnInit, Observer  {
 
     public events: Event[];
 
+    public selectedEvent: Event;
     constructor(private eventService: EventService, private authenticationService: AuthenticationService) {
         this.authenticationService.registerListener(this);
     }
@@ -25,4 +26,12 @@ export class EventViewerComponent implements OnInit, Observer  {
     ngOnInit(): void {
         this.eventService.getEvents().then(e => this.events = e);
     }
+
+
+    viewEvent(event: Event): void {
+        this.selectedEvent = event;
+        
+    }
+
+
 }
