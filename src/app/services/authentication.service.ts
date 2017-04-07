@@ -38,7 +38,6 @@ export class AuthenticationService implements CanActivate {
     }
 
     isLoggedIn(): boolean {
-        console.log(this.getToken().length > 0);
         return this.getToken().length > 0;
     }
 
