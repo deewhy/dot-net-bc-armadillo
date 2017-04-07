@@ -1,11 +1,14 @@
 <h2>Events</h2>
+<button class="btn btn-sm" style="float: left" (click)="moveToPreviousAnchor()"> < </button>
+<button class="btn btn-sm" style="float: right" (click)="moteToNextAnchor()"> > </button>
 <table class="table table-striped">
     <tr *ngFor="let event of events" >
         <td>{{event.evbrief}}</td>
-        <td>{{event.evpubdate | date: 'EEEE MMMM d, y h:mm a'}}</td>
-        <td><button type="button" class="btn btn-warning btn-sm" 
-        data-toggle="modal" data-target="#myModal" (click)="viewEvent(event)">details</button>
-</td>
+        <td>{{event.evdate}}</td>
+          <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->
+        <td>
+          <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal" (click)="viewEvent(event)">details</button>
+        </td>
     </tr>
 </table>
 

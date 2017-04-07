@@ -1,7 +1,7 @@
 export class Event {
     evid: number;
     evdayt: string;
-    evdate: string;
+    evdate: Date;
     evtime: string;
     evloc: string;
     evbrief: string;
