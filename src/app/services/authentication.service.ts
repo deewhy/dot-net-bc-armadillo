@@ -4,24 +4,16 @@ import { Headers, Http, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs/Observable';
 
-import { Listener } from '../interfaces/listener';
+import { Subject } from '../abstracts/subject';
 
 @Injectable()
-export class AuthenticationService implements CanActivate {
+export class AuthenticationService extends Subject implements CanActivate {
     private TOKEN_NAME: string = "zenithToken";
     private URL = 'http://dotnetbcbackend.azurewebsites.net/connect/token';
-    private listeners: Listener[] = new Array();
-
-    constructor(private http: Http) { }
-
-    registerListener(listener: Listener): void {
-        this.listeners.push(listener);
-    }
-
-    notifyListeners(): void {
-        this.listeners.forEach(listener =>
-        listener.notify());
-    }
+    
+    constructor(private http: Http) {
+        super();
+     }
 
     authenticate(username: string, password: string): void {
         let creds = 'username=' + username + '&password=' + password + '&grant_type=password'
