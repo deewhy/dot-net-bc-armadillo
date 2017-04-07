@@ -1,7 +1,7 @@
 <h2>Events</h2>
 <table class="table table-striped">
     <tr *ngFor="let event of events" >
-        <td>{{event.evloc}}</td>
+        <td>{{event.evbrief}}</td>
         <td>{{event.evpubdate | date: 'EEEE MMMM d, y h:mm a'}}</td>
         <td><button type="button" class="btn btn-warning btn-sm" 
         data-toggle="modal" data-target="#myModal" (click)="viewEvent(event)">details</button>
@@ -13,7 +13,7 @@
   
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
     
       <!-- Modal content-->
         <div *ngIf="selectedEvent">
@@ -31,7 +31,7 @@
         <p>event time: {{selectedEvent.evtime}}</p>
         <p>event location: {{selectedEvent.evloc}}</p>
         <p>event description: {{selectedEvent.evbreifdesc}}</p>
-        <p>event details: {{selectedEvent.evdetail}}</p>
+        <div [innerHTML]="selectedEvent.evdetail"></div>
         <p>event public update{{selectedEvent.evpubdate}}</p>
         
         </div>
