@@ -76,7 +76,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_3__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -141,7 +141,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -191,7 +191,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -226,7 +226,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -249,7 +249,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -282,7 +282,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -383,7 +383,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -416,7 +416,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -467,7 +467,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -500,7 +500,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -541,7 +541,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -587,7 +587,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -620,7 +620,7 @@ var MemberProfileComponent = (function () {
     ], MemberProfileComponent);
     return MemberProfileComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -657,7 +657,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -690,7 +690,7 @@ var RegistrationComponent = (function () {
     ], RegistrationComponent);
     return RegistrationComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -719,7 +719,7 @@ var MemberService = (function () {
     ], MemberService);
     return MemberService;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -735,7 +735,7 @@ var MemberService = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
@@ -770,7 +770,7 @@ module.exports = ""
 /***/ 677:
 /***/ (function(module, exports) {
 
-module.exports = "/* taken from https://scotch.io/tutorials/responsive-carousel-component-with-angular-2 */\r\n.carousel{\r\n    overflow:hidden;\r\n    width:100%;\r\n}\r\n.slides{\r\n    list-style:none;\r\n    position:relative;\r\n    width:500%; /* Number of panes * 100% */\r\n    overflow:hidden; /* Clear floats */\r\n        /* Slide effect Animations*/\r\n    -webkit-animation:carousel 30s infinite;\r\n    animation:carousel 30s infinite;\r\n}\r\n.slides > li{\r\n    position:relative;\r\n    float:left;\r\n    width: 50%; /* 100 / number of panes */\r\n}\r\n\r\n.carousel img{\r\n    width: 200px;\r\n}\r\n\r\n@-webkit-keyframes carousel{\r\n    0%    { left:-5%; }\r\n    11%   { left:-5%; }\r\n    12.5% { left:-105%; }\r\n    23.5% { left:-105%; }\r\n    25%   { left:-205%; }\r\n    36%   { left:-205%; }\r\n    37.5% { left:-305%; }\r\n    48.5% { left:-305%; }\r\n    50%   { left:-405%; }\r\n    61%   { left:-405%; }\r\n    62.5% { left:-305%; }\r\n    73.5% { left:-305%; }\r\n    75%   { left:-205%; }\r\n    86%   { left:-205%; }\r\n    87.5% { left:-105%; }\r\n    98.5% { left:-105%; }\r\n    100%  { left:-5%; }\r\n}\r\n\r\n@keyframes carousel{\r\n    0%    { left:-5%; }\r\n    11%   { left:-5%; }\r\n    12.5% { left:-105%; }\r\n    23.5% { left:-105%; }\r\n    25%   { left:-205%; }\r\n    36%   { left:-205%; }\r\n    37.5% { left:-305%; }\r\n    48.5% { left:-305%; }\r\n    50%   { left:-405%; }\r\n    61%   { left:-405%; }\r\n    62.5% { left:-305%; }\r\n    73.5% { left:-305%; }\r\n    75%   { left:-205%; }\r\n    86%   { left:-205%; }\r\n    87.5% { left:-105%; }\r\n    98.5% { left:-105%; }\r\n    100%  { left:-5%; }\r\n}"
+module.exports = ".carousel-inner div a img {\r\n    width: 200px;\r\n}\r\n\r\n.carousel-inner {\r\n    height: 200px;\r\n}"
 
 /***/ }),
 
@@ -833,7 +833,7 @@ module.exports = "<div class=\"container\">\r\n    <div class=\"col-sm-9\"><even
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel\">\r\n    <p>Sponsor stuff</p>\r\n    <ul class=\"slides\">\r\n        <li *ngFor=\"let sponsor of sponsors\">\r\n            <a href=\"{{sponsor.sponlink}}\">\r\n                <img src=\"{{sponsor.sponimg}}\">\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</div>"
+module.exports = "<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">\r\n    <div class=\"carousel-inner\" role=\"listbox\">\r\n        <div *ngFor=\"let sponsor of sponsors; let index = index\" class=\"item\" [ngClass]=\"{active: index == 0}\">\r\n            <a href=\"{{sponsor.sponlink}}\">\r\n                <img src=\"{{sponsor.sponimg}}\">\r\n            </a>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
