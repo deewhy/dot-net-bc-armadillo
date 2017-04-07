@@ -1,6 +1,8 @@
 # dot-net-bc-armadillo
 COMP4870 Project: FRONT-END (Angular2 SPA)
 
+URL: http://dotnetbcfrontend.azurewebsites.net/
+
 Front-end repository: https://github.com/deewhy/dot-net-bc-armadillo
 
 Back-end repository: https://github.com/deewhy/dot-net-bc-sloth
@@ -16,3 +18,4 @@ COLOURS:
 - #ffec82 - yellow
 - #fffdf2 - white
 
+Before making a pull request, run "ng build" so that the project will deploy.
