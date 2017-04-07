@@ -13,7 +13,7 @@ export class EventViewerComponent implements OnInit {
     public events: Event[];
 
     ngOnInit(): void {
-        this.eventService.getMemberEvents().then(e => this.events = e);
+        this.eventService.getEvents().then(e => this.events = e);
     }
 
     constructor(private eventService: EventService) { }
