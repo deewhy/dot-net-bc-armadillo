@@ -453,6 +453,9 @@ var EventViewerComponent = (function () {
         var _this = this;
         this.eventService.getEvents().then(function (e) { return _this.events = e; });
     };
+    EventViewerComponent.prototype.viewEvent = function (event) {
+        this.selectedEvent = event;
+    };
     EventViewerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'event-viewer',
@@ -816,14 +819,14 @@ module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n       
 /***/ 684:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Events</h2>\r\n<ul>\r\n    <li *ngFor=\"let event of events\">\r\n        <h2>{{event.evloc}}</h2>\r\n        <h3>{{event.evpubdate | date: 'EEEE MMMM d, y h:m a'}}</h3>\r\n    </li>\r\n</ul>"
+module.exports = "<h2>Events</h2>\r\n<table class=\"table table-striped\">\r\n    <tr *ngFor=\"let event of events\" >\r\n        <td>{{event.evbrief}}</td>\r\n        <td>{{event.evpubdate | date: 'EEEE MMMM d, y h:mm a'}}</td>\r\n        <td><button type=\"button\" class=\"btn btn-warning btn-sm\" \r\n        data-toggle=\"modal\" data-target=\"#myModal\" (click)=\"viewEvent(event)\">details</button>\r\n</td>\r\n    </tr>\r\n</table>\r\n\r\n\r\n  \r\n  <!-- Modal -->\r\n  <div class=\"modal fade\" id=\"myModal\" role=\"dialog\">\r\n    <div class=\"modal-dialog modal-lg\">\r\n    \r\n      <!-- Modal content-->\r\n        <div *ngIf=\"selectedEvent\">\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n          <h4 class=\"modal-title\">{{selectedEvent.evbrief}}</h4>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n            \r\n        <p>id: {{selectedEvent.evid}}</p>\r\n        <p>daytime: {{selectedEvent.evdayt}}</p>\r\n\r\n        <p>event date: {{selectedEvent.evdate}}</p>\r\n        <p>event time: {{selectedEvent.evtime}}</p>\r\n        <p>event location: {{selectedEvent.evloc}}</p>\r\n        <p>event description: {{selectedEvent.evbreifdesc}}</p>\r\n        <div [innerHTML]=\"selectedEvent.evdetail\"></div>\r\n        <p>event public update{{selectedEvent.evpubdate}}</p>\r\n        \r\n        </div>\r\n        </div>\r\n        \r\n        <div class=\"modal-footer\">\r\n          <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n        </div>\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n  "
 
 /***/ }),
 
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-7\"><event-viewer></event-viewer></div>\r\n    <div class=\"col-sm-5\">\r\n        <div class=\"col-xs-12\"><sponsor-viewer></sponsor-viewer>\r\n        <div class=\"col-xs-12\">jobs</div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"col-sm-9\"><event-viewer></event-viewer></div>\r\n    <div class=\"col-sm-3\">\r\n        <div class=\"col-xs-12\"><sponsor-viewer></sponsor-viewer>\r\n        <div class=\"col-xs-12\">jobs</div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
