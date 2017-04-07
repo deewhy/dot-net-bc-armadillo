@@ -830,7 +830,7 @@ module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-7\"><event-view
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel\">\r\n    <p>Sponsor stuff</p>\r\n    <ul class=\"slides\">\r\n        <li *ngFor=\"let sponsor of sponsors\">\r\n            <img src=\"{{sponsor.sponimg}}\">\r\n        </li>\r\n    </ul>\r\n</div>"
+module.exports = "<div class=\"carousel\">\r\n    <p>Sponsor stuff</p>\r\n    <ul class=\"slides\">\r\n        <li *ngFor=\"let sponsor of sponsors\">\r\n            <a href=\"{{sponsor.sponlink}}\">\r\n                <img src=\"{{sponsor.sponimg}}\">\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</div>"
 
 /***/ }),
 
