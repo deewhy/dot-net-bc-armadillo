@@ -76,7 +76,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_3__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -141,7 +141,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -191,7 +191,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -226,7 +226,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -249,7 +249,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -282,7 +282,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -383,7 +383,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -416,7 +416,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -464,7 +464,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -497,7 +497,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -538,7 +538,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -584,7 +584,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -617,7 +617,7 @@ var MemberProfileComponent = (function () {
     ], MemberProfileComponent);
     return MemberProfileComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -654,7 +654,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -687,7 +687,7 @@ var RegistrationComponent = (function () {
     ], RegistrationComponent);
     return RegistrationComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -716,7 +716,7 @@ var MemberService = (function () {
     ], MemberService);
     return MemberService;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -732,7 +732,7 @@ var MemberService = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
@@ -858,7 +858,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\r\n    <div class=\"cont
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12\">Registration stuff goes here.</div>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <form (ngSubmit)=\"onSubmit()\">\r\n        <label for=\"username\">Username</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n        <label for=\"password\">Password</label>\r\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n        <label for=\"email\">Email</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"email\" placeholder=\"Enter Email Address\" name=\"email\" required=\"\" autofocus=\"\" />\r\n        <label for=\"firstname\">First Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"firstname\" placeholder=\"Enter First Name\" name=\"firstname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"lastname\">Last Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"lastname\" placeholder=\"Enter Last Name\" name=\"lastname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"city\">City</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"city\" placeholder=\"Enter City\" name=city required=\"\" autofocus=\"\" />\r\n        <label for=\"notifyjobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"form-control\" [(ngModel)]=\"notifyjobs\" name=\"notifyjobs\"autofocus=\"\" />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Register</button>\r\n    </form>\r\n</div>  "
 
 /***/ }),
 
