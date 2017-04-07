@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Event } from '../models/event';
 import { EventService } from '../services/event.service';
-import { Listener } from '../interfaces/listener';
+import { Observer } from '../interfaces/observer';
 import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { AuthenticationService } from '../services/authentication.service';
   templateUrl: './eventviewer.component.html',
   styleUrls: ['./eventviewer.component.css'],
 })
-export class EventViewerComponent implements OnInit, Listener  {
+export class EventViewerComponent implements OnInit, Observer  {
 
     public events: Event[];
 
