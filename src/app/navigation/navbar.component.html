@@ -8,7 +8,7 @@
             <li><a class="icon-bar" *ngIf="!authenticationService.isLoggedIn()" routerLink="/registration" routerLinkActive="active">Register</a></li>
             <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" routerLink="/profile" routerLinkActive="active">Profile</a></li>
             <li class="dropdown" *ngIf="!authenticationService.isLoggedIn()">
-                <a class="dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" routerLink="/home">
+                <a class="dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="cursor: pointer">
                     Login
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
