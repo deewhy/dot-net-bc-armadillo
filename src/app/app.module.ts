@@ -12,7 +12,6 @@ import { EventViewerComponent } from './homepage/eventviewer.component';
 import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { MemberProfileComponent } from './memberprofile/memberprofile.component';
-import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 
 import { EventService } from './services/event.service';
@@ -30,7 +29,6 @@ import { MemberService } from './services/member.service';
     SponsorViewerComponent,
     FooterComponent,
     RegistrationComponent,
-    AdminComponent,
     MemberProfileComponent,
     LoginComponent
   ],
@@ -47,9 +45,6 @@ import { MemberService } from './services/member.service';
     },
     {
       path: 'registration', component: RegistrationComponent
-    },
-    {
-      path: 'admin', component: AdminComponent
     },
     {
       path: 'profile', component: MemberProfileComponent
