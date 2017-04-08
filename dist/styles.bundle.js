@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__(672)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n.container-fluid{\r\n    min-height: 100%;\r\n    margin: 0 auto -155px; \r\n}\r\n\r\nhtml, body{\r\n    height: 100%;\r\n}", ""]);
 
 // exports
 

@@ -61,7 +61,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -131,7 +131,7 @@ var MemberService = (function () {
     return MemberService;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -181,7 +181,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -216,7 +216,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -239,7 +239,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -272,7 +272,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -373,7 +373,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -406,7 +406,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -526,7 +526,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -559,7 +559,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -600,7 +600,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -646,7 +646,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -690,7 +690,7 @@ var MemberProfileComponent = (function () {
     return MemberProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -704,7 +704,7 @@ var Member = (function () {
     }
     return Member;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/member.js.map
 
 /***/ }),
 
@@ -741,7 +741,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -774,7 +774,7 @@ var RegistrationComponent = (function () {
     ], RegistrationComponent);
     return RegistrationComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -790,7 +790,7 @@ var RegistrationComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
@@ -880,7 +880,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -894,7 +894,7 @@ module.exports = ""
 /***/ 675:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\r\n.footer{\r\n    background: lightgray;\r\n    height: 155px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    margin-left: 0;\r\n}\r\n\r\n#footerImg{\r\n    height: 50%;\r\n}\r\n\r\n#footerSec1{\r\n    height: 100%\r\n}\r\n\r\n"
 
 /***/ }),
 
@@ -950,14 +950,14 @@ module.exports = ""
 /***/ 683:
 /***/ (function(module, exports) {
 
-module.exports = "<nav-bar></nav-bar>\n<router-outlet></router-outlet>\n<footer-bar></footer-bar>"
+module.exports = "<div class=\"container-fluid\">\r\n    <nav-bar></nav-bar>\r\n\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<footer-bar ></footer-bar>\r\n\r\n"
 
 /***/ }),
 
 /***/ 684:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n        <span>Footer Picture</span>\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n        <span>Footer Text</span>\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n        <span>Footer Members</span>\r\n    </div>\r\n</div>"
+module.exports = "\r\n<div class=\"footer navbar-bottom\">\r\n    <div class=\"col-sm-4\" id=\"footerSec1\">\r\n      <!--  <span>Footer Picture</span> -->\r\n        <img  id=\"footerImg\" src=\"../../assets/images/dotnetbclogo.png\">\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n        <span>.NET User Group of British Columbia</span>\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n        <span>Footer Members</span>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -971,7 +971,7 @@ module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float:
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"col-sm-9\"><event-viewer></event-viewer></div>\r\n    <div class=\"col-sm-3\">\r\n        <div class=\"col-xs-12\"><sponsor-viewer></sponsor-viewer>\r\n        <div class=\"col-xs-12\">jobs</div>\r\n    </div>\r\n</div>"
+module.exports = "<div >\r\n    <div class=\"col-sm-9\"><event-viewer></event-viewer></div>\r\n    <div class=\"col-sm-3\">\r\n        <div class=\"col-xs-12\"><sponsor-viewer></sponsor-viewer>\r\n        <div class=\"col-xs-12\">jobs</div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
