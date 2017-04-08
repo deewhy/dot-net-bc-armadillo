@@ -1,6 +1,6 @@
 <h2>Events</h2>
-<button class="btn btn-sm" style="float: left" (click)="moveToPreviousAnchor()"> < </button>
-<button class="btn btn-sm" style="float: right" (click)="moteToNextAnchor()"> > </button>
+<button class="btn btn-sm" style="float: left" (click)="moveToPreviousAnchor()" *ngIf="authenticationService.isLoggedIn()"> < </button>
+<button class="btn btn-sm" style="float: right" (click)="moteToNextAnchor()" *ngIf="authenticationService.isLoggedIn()"> > </button>
 <table class="table table-striped">
     <tr *ngFor="let event of events" >
         <td>{{event.evbrief}}</td>

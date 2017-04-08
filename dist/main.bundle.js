@@ -61,7 +61,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -131,7 +131,7 @@ var MemberService = (function () {
     return MemberService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -181,7 +181,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -216,7 +216,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -239,7 +239,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -272,7 +272,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -373,7 +373,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -406,7 +406,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -441,7 +441,12 @@ var EventViewerComponent = (function () {
     };
     EventViewerComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.eventService.getEvents().then(function (e) { return _this.setThisWeeksEvents(e); });
+        if (this.authenticationService.isLoggedIn()) {
+            this.eventService.getEvents().then(function (e) { return _this.setThisWeeksEvents(e); });
+        }
+        else {
+            this.eventService.getEvents().then(function (e) { return _this.events = e; });
+        }
     };
     EventViewerComponent.prototype.viewEvent = function (event) {
         this.selectedEvent = event;
@@ -526,7 +531,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -559,7 +564,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -600,7 +605,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -646,7 +651,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -690,7 +695,7 @@ var MemberProfileComponent = (function () {
     return MemberProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -704,7 +709,7 @@ var Member = (function () {
     }
     return Member;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/member.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/member.js.map
 
 /***/ }),
 
@@ -741,7 +746,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -774,7 +779,7 @@ var RegistrationComponent = (function () {
     ], RegistrationComponent);
     return RegistrationComponent;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -790,7 +795,7 @@ var RegistrationComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
@@ -880,7 +885,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -964,7 +969,7 @@ module.exports = "\r\n<div class=\"footer navbar-bottom\">\r\n    <div class=\"c
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float: left\" (click)=\"moveToPreviousAnchor()\"> < </button>\r\n<button class=\"btn btn-sm\" style=\"float: right\" (click)=\"moteToNextAnchor()\"> > </button>\r\n<table class=\"table table-striped\">\r\n    <tr *ngFor=\"let event of events\" >\r\n        <td>{{event.evbrief}}</td>\r\n        <td>{{event.evdate}}</td>\r\n          <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-warning btn-sm\" data-toggle=\"modal\" data-target=\"#myModal\" (click)=\"viewEvent(event)\">details</button>\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n\r\n  \r\n  <!-- Modal -->\r\n  <div class=\"modal fade\" id=\"myModal\" role=\"dialog\">\r\n    <div class=\"modal-dialog modal-lg\">\r\n    \r\n      <!-- Modal content-->\r\n        <div *ngIf=\"selectedEvent\">\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n          <h4 class=\"modal-title\">{{selectedEvent.evbrief}}</h4>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n            \r\n        <p>id: {{selectedEvent.evid}}</p>\r\n        <p>daytime: {{selectedEvent.evdayt}}</p>\r\n\r\n        <p>event date: {{selectedEvent.evdate}}</p>\r\n        <p>event time: {{selectedEvent.evtime}}</p>\r\n        <p>event location: {{selectedEvent.evloc}}</p>\r\n        <p>event description: {{selectedEvent.evbreifdesc}}</p>\r\n        <div [innerHTML]=\"selectedEvent.evdetail\"></div>\r\n        <p>event public update{{selectedEvent.evpubdate}}</p>\r\n        \r\n        </div>\r\n        </div>\r\n        \r\n        <div class=\"modal-footer\">\r\n          <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n        </div>\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n  "
+module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float: left\" (click)=\"moveToPreviousAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> < </button>\r\n<button class=\"btn btn-sm\" style=\"float: right\" (click)=\"moteToNextAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> > </button>\r\n<table class=\"table table-striped\">\r\n    <tr *ngFor=\"let event of events\" >\r\n        <td>{{event.evbrief}}</td>\r\n        <td>{{event.evdate}}</td>\r\n          <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->\r\n        <td>\r\n          <button type=\"button\" class=\"btn btn-warning btn-sm\" data-toggle=\"modal\" data-target=\"#myModal\" (click)=\"viewEvent(event)\">details</button>\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n\r\n  \r\n  <!-- Modal -->\r\n  <div class=\"modal fade\" id=\"myModal\" role=\"dialog\">\r\n    <div class=\"modal-dialog modal-lg\">\r\n    \r\n      <!-- Modal content-->\r\n        <div *ngIf=\"selectedEvent\">\r\n      <div class=\"modal-content\">\r\n        <div class=\"modal-header\">\r\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n          <h4 class=\"modal-title\">{{selectedEvent.evbrief}}</h4>\r\n        </div>\r\n        <div class=\"modal-body\">\r\n            \r\n        <p>id: {{selectedEvent.evid}}</p>\r\n        <p>daytime: {{selectedEvent.evdayt}}</p>\r\n\r\n        <p>event date: {{selectedEvent.evdate}}</p>\r\n        <p>event time: {{selectedEvent.evtime}}</p>\r\n        <p>event location: {{selectedEvent.evloc}}</p>\r\n        <p>event description: {{selectedEvent.evbreifdesc}}</p>\r\n        <div [innerHTML]=\"selectedEvent.evdetail\"></div>\r\n        <p>event public update{{selectedEvent.evpubdate}}</p>\r\n        \r\n        </div>\r\n        </div>\r\n        \r\n        <div class=\"modal-footer\">\r\n          <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n        </div>\r\n      </div>\r\n      \r\n    </div>\r\n  </div>\r\n  "
 
 /***/ }),
 
@@ -1006,7 +1011,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\r\n    <div class=\"cont
 /***/ 691:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <form (ngSubmit)=\"onSubmit()\">\r\n        <label for=\"username\">Username</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n        <label for=\"password\">Password</label>\r\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n        <label for=\"email\">Email</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"email\" placeholder=\"Enter Email Address\" name=\"email\" required=\"\" autofocus=\"\" />\r\n        <label for=\"firstname\">First Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"firstname\" placeholder=\"Enter First Name\" name=\"firstname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"lastname\">Last Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"lastname\" placeholder=\"Enter Last Name\" name=\"lastname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"city\">City</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"city\" placeholder=\"Enter City\" name=city required=\"\" autofocus=\"\" />\r\n        <label for=\"notifyjobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"form-control\" [(ngModel)]=\"notifyjobs\" name=\"notifyjobs\"autofocus=\"\" />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Register</button>\r\n    </form>\r\n</div>  "
+module.exports = "<div class=\"container\">\r\n    <form (ngSubmit)=\"onSubmit()\">\r\n        <label for=\"username\">Username</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n        <label for=\"password\">Password</label>\r\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n        <label for=\"email\">Email</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"email\" placeholder=\"Enter Email Address\" name=\"email\" required=\"\" autofocus=\"\" />\r\n        <label for=\"firstname\">First Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"firstname\" placeholder=\"Enter First Name\" name=\"firstname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"lastname\">Last Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"lastname\" placeholder=\"Enter Last Name\" name=\"lastname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"city\">City</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"city\" placeholder=\"Enter City\" name=city required=\"\" autofocus=\"\" />\r\n        <label for=\"notifyjobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"notifyjobs\" name=\"notifyjobs\"autofocus=\"\" />\r\n        <br />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Register</button>\r\n    </form>\r\n</div>  "
 
 /***/ }),
 
