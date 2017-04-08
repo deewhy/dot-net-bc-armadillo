@@ -24,7 +24,6 @@ export class AuthenticationService extends Subject implements CanActivate {
                 let user = r.json();
                 this.setToken(user["access_token"]);
                 this.notifyListeners();
-                this.router.navigate(['/home']);
             });
     }
 

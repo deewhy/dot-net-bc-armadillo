@@ -38,12 +38,6 @@ export class EventViewerComponent implements OnInit, Observer  {
         
     }
     
-    viewEvent(event: Event): void {
-        this.selectedEvent = event;
-    }
-
-
-
     setThisWeeksEvents(events: Event[]) {
         if (this.anchorDay == null) {
             this.setAnchorDay();

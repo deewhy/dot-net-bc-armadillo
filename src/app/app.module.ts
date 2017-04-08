@@ -13,6 +13,7 @@ import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { MemberProfileComponent } from './memberprofile/memberprofile.component';
 import { LoginComponent } from './login/login.component';
+import { EventDetailComponent } from './eventdetail/eventdetail.component';
 
 import { EventService } from './services/event.service';
 import { SponsorService } from './services/sponsor.service';
@@ -30,7 +31,8 @@ import { MemberService } from './services/member.service';
     FooterComponent,
     RegistrationComponent,
     MemberProfileComponent,
-    LoginComponent
+    LoginComponent,
+    EventDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,9 @@ import { MemberService } from './services/member.service';
     },
     {
       path: 'profile', component: MemberProfileComponent, canActivate: [AuthenticationService]
+    },
+    {
+      path: 'event/:id', component: EventDetailComponent
     }
     ])
   ],
