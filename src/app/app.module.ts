@@ -47,7 +47,7 @@ import { MemberService } from './services/member.service';
       path: 'registration', component: RegistrationComponent
     },
     {
-      path: 'profile', component: MemberProfileComponent
+      path: 'profile', component: MemberProfileComponent, canActivate: [AuthenticationService]
     }
     ])
   ],

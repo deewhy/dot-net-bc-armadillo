@@ -5,17 +5,17 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a class="icon-bar" routerLink="/home" routerLinkActive="active">Home</a></li>
-            <li><a class="icon-bar" routerLink="/registration" routerLinkActive="active">Register</a></li>
-            <li><a class="icon-bar" routerLink="/profile" routerLinkActive="active">Profile</a></li>
+            <li><a class="icon-bar" *ngIf="!authenticationService.isLoggedIn()" routerLink="/registration" routerLinkActive="active">Register</a></li>
+            <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" routerLink="/profile" routerLinkActive="active">Profile</a></li>
             <li class="dropdown" *ngIf="!authenticationService.isLoggedIn()">
-                <a class="dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <a class="dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="cursor: pointer">
                     Login
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <login></login>
                 </ul>
             </li>
-            <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" (click)="authenticationService.logOut()">Logout</a></li>
+            <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" (click)="authenticationService.logOut()" routerLink="/home" routerLinkActive="active">Logout</a></li>
         </ul>
     </div>
 </nav>
