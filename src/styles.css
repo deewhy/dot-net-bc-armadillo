@@ -3,7 +3,16 @@ h2 {
     color: #105e8c;
 }
 
+html, body{
+    height: 100%;
+}
+
 body {
     background-color: #fffdf2;
     color:#0c1521;
+}
+
+.container-fluid{
+    min-height: 100%;
+    margin: 0 auto -155px; 
 }

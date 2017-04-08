@@ -6,6 +6,6 @@ export class Member {
     username: string;
     password: string;
     isactive: boolean;
-    notifiyjobs: boolean;
+    notifiyjobs: boolean; 
     created: Date;
 }

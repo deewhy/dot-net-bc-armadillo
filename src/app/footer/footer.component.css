@@ -5,3 +5,23 @@
 .icon {
     max-width: 100px;
 }
+
+.footer{
+    background: lightgray;
+    height: 155px;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+}
+
+#footerImg{
+    height: 50%;
+}
+
+#footerSec1{
+    height: 100%
+}
