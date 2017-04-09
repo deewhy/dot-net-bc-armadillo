@@ -6,3 +6,20 @@
     height: 100px;
     background-color: #0c1521;
 }
+
+#HeaderImg{
+    height: 80px;
+    width: 80%;
+}
+.container-fluid {
+  text-align:center;
+  }
+.navbar-nav {
+    display:inline-block;
+    vertical-align: top;
+    padding: 25px 25px;
+}
+
+.nav ul{
+    margin:0;
+}

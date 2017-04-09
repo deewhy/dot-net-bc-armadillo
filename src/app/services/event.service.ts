@@ -27,7 +27,7 @@ export class EventService {
                .toPromise()
                .then(response => response.json())
                .catch(this.handleError);
-               return events;
+        return events;
     }
 
     getAnonymousEvents(): Promise<Event[]> {

@@ -13,11 +13,14 @@ import { SponsorViewerComponent } from './homepage/sponsorviewer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { MemberProfileComponent } from './memberprofile/memberprofile.component';
 import { LoginComponent } from './login/login.component';
+import { EventDetailComponent } from './eventdetail/eventdetail.component';
+import { JobsViewerComponent } from './homepage/jobsviewer.component';
 
 import { EventService } from './services/event.service';
 import { SponsorService } from './services/sponsor.service';
 import { AuthenticationService } from './services/authentication.service';
 import { MemberService } from './services/member.service';
+import { JobPostingService } from './services/jobposting.service';
 
 
 @NgModule({
@@ -30,7 +33,9 @@ import { MemberService } from './services/member.service';
     FooterComponent,
     RegistrationComponent,
     MemberProfileComponent,
-    LoginComponent
+    LoginComponent,
+    EventDetailComponent,
+    JobsViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,9 @@ import { MemberService } from './services/member.service';
     },
     {
       path: 'profile', component: MemberProfileComponent, canActivate: [AuthenticationService]
+    },
+    {
+      path: 'event/:id', component: EventDetailComponent
     }
     ])
   ],
@@ -55,7 +63,8 @@ import { MemberService } from './services/member.service';
     EventService,
     SponsorService,
     AuthenticationService,
-    MemberService
+    MemberService,
+    JobPostingService
   ],
   bootstrap: [AppComponent]
 })

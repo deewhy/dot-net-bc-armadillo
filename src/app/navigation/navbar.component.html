@@ -2,10 +2,10 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
-                <img class="logo" src="/assets/images/dotnetbclogo.png" alt=".Net BC">
+                <img id="HeaderImg" class="logo" src="/assets/images/dotnetbclogo.png" alt=".Net BC">
             </a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right text-center">
             <li><a class="icon-bar" routerLink="/home" routerLinkActive="active">Home</a></li>
             <li><a class="icon-bar" *ngIf="!authenticationService.isLoggedIn()" routerLink="/registration" routerLinkActive="active">Register</a></li>
             <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" routerLink="/profile" routerLinkActive="active">Profile</a></li>

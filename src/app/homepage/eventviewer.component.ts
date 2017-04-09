@@ -30,15 +30,14 @@ export class EventViewerComponent implements OnInit, Observer  {
     }
 
     ngOnInit(): void {
-        this.eventService.getEvents().then(e => this.setThisWeeksEvents(e));
+        if (this.authenticationService.isLoggedIn()) {
+            this.eventService.getEvents().then(e => this.setThisWeeksEvents(e));
+        } else {
+            this.eventService.getEvents().then(e => this.events = e);
+        }
+        
     }
     
-    viewEvent(event: Event): void {
-        this.selectedEvent = event;
-    }
-
-
-
     setThisWeeksEvents(events: Event[]) {
         if (this.anchorDay == null) {
             this.setAnchorDay();
