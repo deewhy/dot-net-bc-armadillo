@@ -3,8 +3,15 @@
 <button class="btn btn-sm" style="float: right" (click)="moteToNextAnchor()" *ngIf="authenticationService.isLoggedIn()"> > </button>
 <table class="table table-striped">
   <tr *ngFor="let event of events">
-    <td>{{event.evbrief}}</td>
-    <td>{{event.evdate}}</td>
+    <td>
+      {{event.evbrief}}
+      <br/>
+    <!--  <div [innerHTML]="event.evdetail"></div>-->
+    </td>
+    <td>
+      {{event.evdate}}
+      <br/>
+    </td>
     <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->
     <td>
       <button type="button" class="btn btn-warning btn-sm" [routerLink]="['/event', event.evid]" routerLinkActive="active">details</button>
