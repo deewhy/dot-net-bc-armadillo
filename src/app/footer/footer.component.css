@@ -3,12 +3,12 @@
 }
 
 .icon {
-    max-width: 100px;
+    max-height: 50px;
 }
 
 .footer{
-    background: lightgray;
-    height: 100px;
+    background: #c1c1b9;
+    
     max-height: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -16,12 +16,9 @@
     bottom: 0;
     width: 100%;
     margin-left: 0;
-}
-
-#footerImg{
-    height: 50%;
+    padding: 10px;
 }
 
 #footerSec1{
-    height: 100%
+    text-align: right;
 }
