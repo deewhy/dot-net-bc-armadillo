@@ -1,11 +1,12 @@
 export class Member {
-    firstname: string;
-    lastname: string;
-    city: string;
-    email: string;
-    username: string;
-    password: string;
-    isactive: boolean;
-    notifiyjobs: boolean; 
-    created: Date;
+    FirstName: string;
+    LastName: string;
+    City: string;
+    Email: string;
+    UserName: string;
+    Password: string;
+    ConfirmPassword: string;
+    isActive: boolean;
+    NotifiyJobs: boolean; 
+    Created: Date;
 }

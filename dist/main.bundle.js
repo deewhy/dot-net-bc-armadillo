@@ -5,8 +5,8 @@ webpackJsonp([1,4],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(78);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -31,10 +31,10 @@ var EventService = (function () {
         return this.authenticationService.isLoggedIn() ? this.getMemberEvents() : this.getAnonymousEvents();
     };
     EventService.prototype.getMemberEvents = function () {
-        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]();
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Headers */]();
         headers.append('Authorization', 'Bearer ' + this.authenticationService.getToken());
         headers.append('content-type', 'application/json');
-        var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* RequestOptions */]({ headers: headers });
         var events = this.http.get(this.URL, options)
             .toPromise()
             .then(function (response) { return response.json(); })
@@ -42,9 +42,9 @@ var EventService = (function () {
         return events;
     };
     EventService.prototype.getAnonymousEvents = function () {
-        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]();
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Headers */]();
         headers.append('content-type', 'application/json');
-        var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* RequestOptions */]({ headers: headers });
         var events = this.http.get(this.URL_PUBLIC, options)
             .toPromise()
             .then(function (response) { return response.json(); })
@@ -56,7 +56,7 @@ var EventService = (function () {
     };
     EventService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */]) === 'function' && _b) || Object])
     ], EventService);
     return EventService;
     var _a, _b;
@@ -65,7 +65,112 @@ var EventService = (function () {
 
 /***/ }),
 
-/***/ 332:
+/***/ 219:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_member__ = __webpack_require__(521);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MemberService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var MemberService = (function () {
+    function MemberService(http, authenticationService) {
+        this.http = http;
+        this.authenticationService = authenticationService;
+        this.URL = "http://dotnetbcbackend.azurewebsites.net/api/APIApplicationUsers";
+    }
+    MemberService.prototype.registerMember = function (UserName, Password, ConfirmPassword, Email, FirstName, LastName, City, NotifyJobs) {
+        //let creds = 'UserName=' + UserName + '&password=' + Password + '&grant_type=password' + '&ConfirmPassword=' + ConfirmPassword + '&Email=' + Email + '&FirstName='
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Headers */]({
+            'Content-Type': 'application/json',
+            'UserName': UserName,
+            'Password': Password,
+            'ConfirmPassword': ConfirmPassword,
+            'Email': Email,
+            'FirstName': FirstName,
+            'LastName': LastName,
+            'City': City,
+            'NotifyJobs': NotifyJobs
+        });
+        var json = {
+            'Content-Type': 'application/json',
+            'UserName': UserName,
+            'Password': Password,
+            'ConfirmPassword': ConfirmPassword,
+            'Email': Email,
+            'FirstName': FirstName,
+            'LastName': LastName,
+            'City': City,
+            'NotifyJobs': NotifyJobs
+        };
+        var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* RequestOptions */]({ headers: headers });
+        var response;
+        response = this.http.post(this.URL, json)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+        return response;
+    };
+    MemberService.prototype.getLoggedInMember = function () {
+        //if (!this.authenticationService.isLoggedIn()) {
+        var m = new __WEBPACK_IMPORTED_MODULE_3__models_member__["a" /* Member */]();
+        m.City = "FakeTowne";
+        m.Created = new Date();
+        m.Email = "fake@fake.fake";
+        m.FirstName = "firstfakename";
+        m.LastName = "lastfakename";
+        m.isActive = true;
+        m.NotifiyJobs = true;
+        m.Password = "fake";
+        m.UserName = "fake";
+        return new Promise(function (resolve, reject) { m; resolve(m); });
+        //}
+        /*
+        let headers = new Headers();
+        headers.append('Authorization', 'Bearer ' + this.authenticationService.getToken());
+        headers.append('content-type', 'application/json');
+
+        let options = new RequestOptions({ headers: headers });
+        
+        let member: Promise<Member> =  this.http.get(this.URL, options)
+               .toPromise()
+               .then(response => response.json())
+               .catch(this.handleError);
+               return member;
+               */
+    };
+    MemberService.prototype.handleError = function (error) {
+        return new Promise(function (resolve, reject) {
+            resolve(error._body);
+        });
+        //return Promise.reject(error.message || error);
+    };
+    MemberService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */]) === 'function' && _b) || Object])
+    ], MemberService);
+    return MemberService;
+    var _a, _b;
+}());
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/member.service.js.map
+
+/***/ }),
+
+/***/ 333:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -144,82 +249,12 @@ var JobPostingService = (function () {
 
 /***/ }),
 
-/***/ 333:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_service__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_member__ = __webpack_require__(521);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MemberService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var MemberService = (function () {
-    function MemberService(http, authenticationService) {
-        this.http = http;
-        this.authenticationService = authenticationService;
-        this.URL = "http://dotnetbcbackend.azurewebsites.net/api/APIEvents";
-    }
-    MemberService.prototype.getLoggedInMember = function () {
-        //if (!this.authenticationService.isLoggedIn()) {
-        var m = new __WEBPACK_IMPORTED_MODULE_3__models_member__["a" /* Member */]();
-        m.city = "FakeTowne";
-        m.created = new Date();
-        m.email = "fake@fake.fake";
-        m.firstname = "firstfakename";
-        m.lastname = "lastfakename";
-        m.isactive = true;
-        m.notifiyjobs = true;
-        m.password = "fake";
-        m.username = "fake";
-        return new Promise(function (resolve, reject) { m; resolve(m); });
-        //}
-        /*
-        let headers = new Headers();
-        headers.append('Authorization', 'Bearer ' + this.authenticationService.getToken());
-        headers.append('content-type', 'application/json');
-
-        let options = new RequestOptions({ headers: headers });
-        
-        let member: Promise<Member> =  this.http.get(this.URL, options)
-               .toPromise()
-               .then(response => response.json())
-               .catch(this.handleError);
-               return member;
-               */
-    };
-    MemberService.prototype.handleError = function (error) {
-        return Promise.reject(error.message || error);
-    };
-    MemberService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__authentication_service__["a" /* AuthenticationService */]) === 'function' && _b) || Object])
-    ], MemberService);
-    return MemberService;
-    var _a, _b;
-}());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/member.service.js.map
-
-/***/ }),
-
 /***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SponsorService; });
@@ -241,9 +276,9 @@ var SponsorService = (function () {
         this.URL = "http://dotnetbcbackend.azurewebsites.net/api/APISponsors";
     }
     SponsorService.prototype.getSponsors = function () {
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Headers */]();
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('content-type', 'application/json');
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
         var sponsors = this.http.get(this.URL, options)
             .toPromise()
             .then(function (response) { return response.json(); })
@@ -255,7 +290,7 @@ var SponsorService = (function () {
     };
     SponsorService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */]) === 'function' && _a) || Object])
     ], SponsorService);
     return SponsorService;
     var _a;
@@ -296,6 +331,95 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/main.js.map
+
+/***/ }),
+
+/***/ 41:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstracts_subject__ = __webpack_require__(509);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationService; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var AuthenticationService = (function (_super) {
+    __extends(AuthenticationService, _super);
+    function AuthenticationService(http, router) {
+        _super.call(this);
+        this.http = http;
+        this.router = router;
+        this.TOKEN_NAME = "zenithToken";
+        this.URL = 'http://dotnetbcbackend.azurewebsites.net/connect/token';
+    }
+    AuthenticationService.prototype.authenticate = function (username, password) {
+        var _this = this;
+        var creds = 'username=' + username + '&password=' + password + '&grant_type=password';
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* RequestOptions */]({ headers: headers });
+        this.http.post(this.URL, creds, options)
+            .toPromise()
+            .then(function (r) {
+            var user = r.json();
+            _this.setToken(user["access_token"]);
+            _this.notifyListeners();
+        });
+    };
+    AuthenticationService.prototype.getToken = function () {
+        var token = localStorage.getItem(this.TOKEN_NAME);
+        if (token == undefined) {
+            return "";
+        }
+        return token;
+    };
+    AuthenticationService.prototype.setToken = function (token) {
+        localStorage.setItem(this.TOKEN_NAME, token);
+    };
+    AuthenticationService.prototype.isLoggedIn = function () {
+        return this.getToken().length > 0;
+    };
+    AuthenticationService.prototype.logOut = function () {
+        localStorage.setItem(this.TOKEN_NAME, "");
+        this.notifyListeners();
+    };
+    AuthenticationService.prototype.canActivate = function (route, state) {
+        if (this.isLoggedIn()) {
+            return true;
+        }
+        else {
+            this.router.navigate(['/home']);
+            return false;
+        }
+    };
+    AuthenticationService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
+    ], AuthenticationService);
+    return AuthenticationService;
+    var _a, _b;
+}(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
+//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -359,11 +483,11 @@ var AppComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(470);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(510);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_navbar_component__ = __webpack_require__(522);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__footer_footer_component__ = __webpack_require__(513);
@@ -377,9 +501,9 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__homepage_jobsviewer_component__ = __webpack_require__(516);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_event_service__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_sponsor_service__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_authentication_service__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_member_service__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_jobposting_service__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_authentication_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_member_service__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_jobposting_service__ = __webpack_require__(333);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -473,9 +597,9 @@ var AppModule = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_event_service__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_authentication_service__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_authentication_service__ = __webpack_require__(41);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventDetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -576,7 +700,7 @@ var FooterComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_event_service__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(41);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventViewerComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -730,7 +854,7 @@ var HomeComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_jobposting_service__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_jobposting_service__ = __webpack_require__(333);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobsViewerComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -812,8 +936,8 @@ var SponsorViewerComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(104);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -858,8 +982,8 @@ var LoginComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_member_service__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_member_service__ = __webpack_require__(219);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MemberProfileComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -930,7 +1054,7 @@ var Member = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(41);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavBarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -967,6 +1091,10 @@ var NavBarComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_member_service__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(104);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -978,18 +1106,55 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
 var RegistrationComponent = (function () {
-    function RegistrationComponent() {
+    function RegistrationComponent(http, authenticationService, memberService, router) {
+        this.http = http;
+        this.authenticationService = authenticationService;
+        this.memberService = memberService;
+        this.router = router;
     }
+    RegistrationComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.memberService.registerMember(this.UserName, this.Password, this.ConfirmPassword, this.Email, this.FirstName, this.LastName, this.City, this.NotifyJobs).then(function (q) { _this.getMember = q; _this.ngOnInit(); });
+        this.error = undefined;
+        this.problem = false;
+    };
+    RegistrationComponent.prototype.ngOnInit = function () {
+        this.error = this.getMember;
+        if (this.error != undefined) {
+            try {
+                this.error = JSON.parse(this.error);
+                this.problem = true;
+            }
+            catch (e) {
+                //Registered
+                this.authenticationService.authenticate(this.UserName, this.Password);
+                this.router.navigate(['/home']);
+            }
+        }
+    };
+    RegistrationComponent.prototype.getError = function (error) {
+        try {
+            return this.error[error][0];
+        }
+        catch (e) {
+            return null;
+        }
+    };
     RegistrationComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'registration',
             template: __webpack_require__(699),
             styles: [__webpack_require__(688)]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["d" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_http__["d" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__["a" /* AuthenticationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_authentication_service__["a" /* AuthenticationService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_member_service__["a" /* MemberService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_member_service__["a" /* MemberService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], RegistrationComponent);
     return RegistrationComponent;
+    var _a, _b, _c, _d;
 }());
 //# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/registration.component.js.map
 
@@ -1008,95 +1173,6 @@ var environment = {
     production: false
 };
 //# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/environment.js.map
-
-/***/ }),
-
-/***/ 55:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstracts_subject__ = __webpack_require__(509);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationService; });
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var AuthenticationService = (function (_super) {
-    __extends(AuthenticationService, _super);
-    function AuthenticationService(http, router) {
-        _super.call(this);
-        this.http = http;
-        this.router = router;
-        this.TOKEN_NAME = "zenithToken";
-        this.URL = 'http://dotnetbcbackend.azurewebsites.net/connect/token';
-    }
-    AuthenticationService.prototype.authenticate = function (username, password) {
-        var _this = this;
-        var creds = 'username=' + username + '&password=' + password + '&grant_type=password';
-        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
-        var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* RequestOptions */]({ headers: headers });
-        this.http.post(this.URL, creds, options)
-            .toPromise()
-            .then(function (r) {
-            var user = r.json();
-            _this.setToken(user["access_token"]);
-            _this.notifyListeners();
-        });
-    };
-    AuthenticationService.prototype.getToken = function () {
-        var token = localStorage.getItem(this.TOKEN_NAME);
-        if (token == undefined) {
-            return "";
-        }
-        return token;
-    };
-    AuthenticationService.prototype.setToken = function (token) {
-        localStorage.setItem(this.TOKEN_NAME, token);
-    };
-    AuthenticationService.prototype.isLoggedIn = function () {
-        return this.getToken().length > 0;
-    };
-    AuthenticationService.prototype.logOut = function () {
-        localStorage.setItem(this.TOKEN_NAME, "");
-        this.notifyListeners();
-    };
-    AuthenticationService.prototype.canActivate = function (route, state) {
-        if (this.isLoggedIn()) {
-            return true;
-        }
-        else {
-            this.router.navigate(['/home']);
-            return false;
-        }
-    };
-    AuthenticationService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
-    ], AuthenticationService);
-    return AuthenticationService;
-    var _a, _b;
-}(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -1250,7 +1326,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\r\n    <div class=\"cont
 /***/ 699:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <form (ngSubmit)=\"onSubmit()\">\r\n        <label for=\"username\">Username</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n        <label for=\"password\">Password</label>\r\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n        <label for=\"email\">Email</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"email\" placeholder=\"Enter Email Address\" name=\"email\" required=\"\" autofocus=\"\" />\r\n        <label for=\"firstname\">First Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"firstname\" placeholder=\"Enter First Name\" name=\"firstname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"lastname\">Last Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"lastname\" placeholder=\"Enter Last Name\" name=\"lastname\" required=\"\" autofocus=\"\" />\r\n        <label for=\"city\">City</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"city\" placeholder=\"Enter City\" name=city required=\"\" autofocus=\"\" />\r\n        <label for=\"notifyjobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"notifyjobs\" name=\"notifyjobs\"autofocus=\"\" />\r\n        <br />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Register</button>\r\n    </form>\r\n</div>  "
+module.exports = "<div class=\"container\">\r\n    <form (ngSubmit)=\"onSubmit()\">\r\n        \r\n        <label for=\"UserName\">UserName</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"UserName\" placeholder=\"Enter UserName\" name=\"UserName\" required=\"\" autofocus=\"\" />\r\n        <h4>{{getError(\"UserName\")}}</h4>\r\n        <label for=\"Password\">Password</label>\r\n        <input type=\"Password\" class=\"form-control\" [(ngModel)]=\"Password\" placeholder=\"Enter Password\" name=\"Password\" required=\"\" />\r\n        <h4>{{getError(\"Password\")}}</h4>\r\n        <label for=\"ConfirmPassword\">Confirm Password</label>\r\n        <input type=\"Password\" class=\"form-control\" [(ngModel)]=\"ConfirmPassword\" placeholder=\"Enter Password\" name=\"ConfirmPassword\" required=\"\" />\r\n        <h4>{{getError(\"ConfirmPassword\")}}</h4>\r\n        <label for=\"Email\">Email</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Email\" placeholder=\"Enter Email Address\" name=\"Email\" required=\"\" autofocus=\"\" />\r\n        <h4>{{getError(\"Email\")}}</h4>\r\n        <label for=\"FirstName\">First Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"FirstName\" placeholder=\"Enter First Name\" name=\"FirstName\" required=\"\" autofocus=\"\" />\r\n        <label for=\"LastName\">Last Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"LastName\" placeholder=\"Enter Last Name\" name=\"LastName\" required=\"\" autofocus=\"\" />\r\n        <label for=\"City\">City</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"City\" placeholder=\"Enter City\" name=City required=\"\" autofocus=\"\" />\r\n        <label for=\"NotifyJobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"NotifyJobs\" name=\"NotifyJobs\"autofocus=\"\" value=\"true\" checked=\"checked\" />\r\n        <h4 *ngIf=\"problem\">There was a problem creating your account</h4>\r\n        <br />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Register</button>\r\n    </form>\r\n</div>  "
 
 /***/ }),
 

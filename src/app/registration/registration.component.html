@@ -1,19 +1,27 @@
 <div class="container">
     <form (ngSubmit)="onSubmit()">
-        <label for="username">Username</label>
-        <input type="text" class="form-control" [(ngModel)]="username" placeholder="Enter Username" name="username" required="" autofocus="" />
-        <label for="password">Password</label>
-        <input type="password" class="form-control" [(ngModel)]="password" placeholder="Enter Password" name="password" required="" />
-        <label for="email">Email</label>
-        <input type="text" class="form-control" [(ngModel)]="email" placeholder="Enter Email Address" name="email" required="" autofocus="" />
-        <label for="firstname">First Name</label>
-        <input type="text" class="form-control" [(ngModel)]="firstname" placeholder="Enter First Name" name="firstname" required="" autofocus="" />
-        <label for="lastname">Last Name</label>
-        <input type="text" class="form-control" [(ngModel)]="lastname" placeholder="Enter Last Name" name="lastname" required="" autofocus="" />
-        <label for="city">City</label>
-        <input type="text" class="form-control" [(ngModel)]="city" placeholder="Enter City" name=city required="" autofocus="" />
-        <label for="notifyjobs">Notify About Jobs</label>
-        <input type="checkbox" class="checkbox" [(ngModel)]="notifyjobs" name="notifyjobs"autofocus="" />
+        
+        <label for="UserName">UserName</label>
+        <input type="text" class="form-control" [(ngModel)]="UserName" placeholder="Enter UserName" name="UserName" required="" autofocus="" />
+        <h4>{{getError("UserName")}}</h4>
+        <label for="Password">Password</label>
+        <input type="Password" class="form-control" [(ngModel)]="Password" placeholder="Enter Password" name="Password" required="" />
+        <h4>{{getError("Password")}}</h4>
+        <label for="ConfirmPassword">Confirm Password</label>
+        <input type="Password" class="form-control" [(ngModel)]="ConfirmPassword" placeholder="Enter Password" name="ConfirmPassword" required="" />
+        <h4>{{getError("ConfirmPassword")}}</h4>
+        <label for="Email">Email</label>
+        <input type="text" class="form-control" [(ngModel)]="Email" placeholder="Enter Email Address" name="Email" required="" autofocus="" />
+        <h4>{{getError("Email")}}</h4>
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" [(ngModel)]="FirstName" placeholder="Enter First Name" name="FirstName" required="" autofocus="" />
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" [(ngModel)]="LastName" placeholder="Enter Last Name" name="LastName" required="" autofocus="" />
+        <label for="City">City</label>
+        <input type="text" class="form-control" [(ngModel)]="City" placeholder="Enter City" name=City required="" autofocus="" />
+        <label for="NotifyJobs">Notify About Jobs</label>
+        <input type="checkbox" class="checkbox" [(ngModel)]="NotifyJobs" name="NotifyJobs"autofocus="" value="true" checked="checked" />
+        <h4 *ngIf="problem">There was a problem creating your account</h4>
         <br />
         <button class="btn btn-lg btn-danger btn-block" type="submit">Register</button>
     </form>
