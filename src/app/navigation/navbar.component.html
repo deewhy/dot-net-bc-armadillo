@@ -1,9 +1,9 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" routerLink="/home" routerLinkActive="active">logo goes here</a>
+            <a class="navbar-brand" routerLink="/home" routerLinkActive="active"><img  id="HeaderImg" src="../../assets/images/dotnetbclogo.png"></a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right text-center">
             <li><a class="icon-bar" routerLink="/home" routerLinkActive="active">Home</a></li>
             <li><a class="icon-bar" *ngIf="!authenticationService.isLoggedIn()" routerLink="/registration" routerLinkActive="active">Register</a></li>
             <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" routerLink="/profile" routerLinkActive="active">Profile</a></li>
