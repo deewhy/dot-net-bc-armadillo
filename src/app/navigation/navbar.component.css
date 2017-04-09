@@ -1,0 +1,19 @@
+#HeaderImg{
+    height: 80px;
+    width: 80%;
+}
+.navbar{
+    height: 100px;
+}
+.container-fluid {
+  text-align:center;
+  }
+.navbar-nav {
+    display:inline-block;
+    vertical-align: top;
+    padding: 25px 25px;
+}
+
+.nav ul{
+    margin:0;
+}
