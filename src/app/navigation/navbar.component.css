@@ -1,22 +1,38 @@
 .logo {
-    max-height: 80px;
+    max-height: 75px;
+    max-width: 100%;
 }
 
 .navbar {
-    height: 100px;
     background-color: #0c1521;
+    width: 100%;
+    min-height: 100px;
+}
+
+.navbar-nav {
+    display:inline-block;
+}
+
+.navbar-header {
+    min-height: 100px;
 }
 
 .container-fluid {
   text-align:center;
-  }
-
-.navbar-nav {
-    display:inline-block;
-    vertical-align: top;
-    padding: 25px 25px;
+  min-height: 100px;
 }
 
-.nav ul{
-    margin:0;
+.nav>li {
+    height:100%;
 }
+
+.nav a {
+    color: #fffefa;
+}
+
+.nav a:hover {
+    color: #ffec82;
+}
+
+
+

@@ -4,11 +4,6 @@ h2 {
     color: #105e8c;
 }
 
-.container-fluid{
-    min-height: 100%;
-    margin: 0 auto -100px; 
-}
-
 html, body{
     height: 100%;
 }
@@ -16,4 +11,12 @@ html, body{
 body {
     background-color: #fffefa;
     color:#0c1521;
+}
+
+a {
+    color: #105e8c;
+}
+
+a:hover {
+    color: #ffec82;
 }
