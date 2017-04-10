@@ -1,20 +1,16 @@
 <div class="container">
-    <form *ngIf="member != undefined">
+    <form *ngIf="member != undefined" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" name="email" required="" [(ngModel)]="member.email">
         </div>
         <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" name="password" required="" [(ngModel)]="member.password">
-        </div>
-        <div class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" name="firstname" required="" [(ngModel)]="member.firstname">
+            <input type="text" class="form-control" name="firstname" required="" [(ngModel)]="member.firstName">
         </div>
         <div class="form-group">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" name="lastname" required="" [(ngModel)]="member.lastname">
+            <input type="text" class="form-control" name="lastname" required="" [(ngModel)]="member.lastName">
         </div>
         <div class="form-group">
             <label for="city">City</label>

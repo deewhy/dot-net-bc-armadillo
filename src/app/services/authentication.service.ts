@@ -5,10 +5,13 @@ import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs/Observable';
 
 import { Subject } from '../abstracts/subject';
+
 @Injectable()
 export class AuthenticationService extends Subject implements CanActivate {
-    private TOKEN_NAME: string = "zenithToken";
+    private TOKEN_NAME: string = "netbc-token";
     private URL = 'http://dotnetbcbackend.azurewebsites.net/connect/token';
+    private USERNAME_NAME: string = "netbc-username"
+    private PASSWORD_NAME: string = "netbc-password"
     
     constructor(private http: Http, private router: Router) {
         super();
@@ -22,7 +25,7 @@ export class AuthenticationService extends Subject implements CanActivate {
             .toPromise()
             .then(r => {
                 let user = r.json();
-                this.setToken(user["access_token"]);
+                this.setToken(user["access_token"], username, password);
                 this.notifyListeners();
             });
     }
@@ -37,8 +40,28 @@ export class AuthenticationService extends Subject implements CanActivate {
         return token;
     }
 
-    setToken(token: string): void {
+    setToken(token: string,username: string, password: string): void {
         localStorage.setItem(this.TOKEN_NAME, token);
+        localStorage.setItem(this.USERNAME_NAME, username);
+        localStorage.setItem(this.PASSWORD_NAME, password);
+    }
+
+    getUsername(): string {
+        let username: string = localStorage.getItem(this.USERNAME_NAME);
+        if (username == undefined) {
+            return "";
+        }
+
+        return username;
+    }
+
+    getPassword(): string {
+        let password: string = localStorage.getItem(this.PASSWORD_NAME);
+        if (password == undefined) {
+            return "";
+        }
+
+        return password;
     }
 
     isLoggedIn(): boolean {
