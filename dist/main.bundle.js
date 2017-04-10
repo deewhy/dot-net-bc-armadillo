@@ -19,7 +19,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -84,7 +84,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -200,7 +200,7 @@ var MemberService = (function (_super) {
     return MemberService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_3__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -308,7 +308,7 @@ var EventAttendenceService = (function (_super) {
     return EventAttendenceService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_3__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/eventattendence.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventattendence.service.js.map
 
 /***/ }),
 
@@ -387,7 +387,7 @@ var JobPostingService = (function () {
     ], JobPostingService);
     return JobPostingService;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/jobposting.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.service.js.map
 
 /***/ }),
 
@@ -437,7 +437,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -544,7 +544,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -579,7 +579,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -612,7 +612,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -728,7 +728,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -808,7 +808,7 @@ var EventDetailComponent = (function () {
     return EventDetailComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/eventdetail.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventdetail.component.js.map
 
 /***/ }),
 
@@ -841,7 +841,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -961,7 +961,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -994,7 +994,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -1035,7 +1035,7 @@ var JobsViewerComponent = (function () {
     return JobsViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/jobsviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobsviewer.component.js.map
 
 /***/ }),
 
@@ -1076,7 +1076,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -1122,7 +1122,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -1173,7 +1173,7 @@ var MemberProfileComponent = (function () {
     return MemberProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -1187,7 +1187,7 @@ var JobPosting = (function () {
     }
     return JobPosting;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/jobposting.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.js.map
 
 /***/ }),
 
@@ -1224,7 +1224,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -1298,7 +1298,7 @@ var RegistrationComponent = (function () {
     return RegistrationComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -1314,7 +1314,7 @@ var RegistrationComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/Git/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
@@ -1328,7 +1328,7 @@ module.exports = "\r\n.container-fluid {\r\n    min-height: 100%;\r\n    margin:
 /***/ 679:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "button {\r\n    margin: 15px 0px;\r\n    background-color: #ffec82;\r\n    color: #0c1521;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n    height: 20px;\r\n}\r\n\r\ninput {\r\n    margin: 5px 0px;\r\n}"
 
 /***/ }),
 
@@ -1370,14 +1370,14 @@ module.exports = ".carousel-inner div a img {\r\n    width: 200px;\r\n}\r\n\r\n.
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = "form {\r\n    margin: 10px;\r\n}\r\n\r\ninput {\r\n    margin: 10px 0px;\r\n}\r\n\r\nbutton {\r\n    margin: 10px 0px;\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}\r\n\r\nbutton:hover {\r\n    color: #ffec82;\r\n}"
+module.exports = "form {\r\n    margin: 10px;\r\n}\r\n\r\ninput {\r\n    margin: 10px 0px;\r\n}\r\n\r\nbutton {\r\n    margin: 10px 0px;\r\n    background-color: #ffec82;\r\n    color: #0c1521;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}"
 
 /***/ }),
 
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "button {\r\n    margin: 15px 0px;\r\n    background-color: #ffec82;\r\n    color: #0c1521;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}"
 
 /***/ }),
 
@@ -1391,7 +1391,7 @@ module.exports = ".logo {\r\n    max-height: 75px;\r\n    max-width: 100%;\r\n}\
 /***/ 688:
 /***/ (function(module, exports) {
 
-module.exports = "form {\r\n    margin: 10px;\r\n}\r\n\r\ninput {\r\n    margin: 5px 0px;\r\n}\r\n\r\nbutton {\r\n    margin: 15px 0px;\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}\r\n\r\nbutton:hover {\r\n    color: #ffec82;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n    height: 20px;\r\n}"
+module.exports = "form {\r\n    margin: 10px;\r\n}\r\n\r\ninput {\r\n    margin: 5px 0px;\r\n}\r\n\r\nbutton {\r\n    margin: 15px 0px;\r\n    background-color: #ffec82;\r\n    color: #0c1521;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n    height: 20px;\r\n}"
 
 /***/ }),
 
@@ -1405,7 +1405,7 @@ module.exports = "<nav-bar></nav-bar>\r\n<div class=\"container-fluid\">\r\n    
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" *ngIf=\"!isPublicEvent && !authenticationService.isLoggedIn()\">\r\n    <div class=\"col-sm-6 col-sm-offset-3\">\r\n        <login></login>\r\n    </div>\r\n</div>\r\n\r\n<div *ngIf=\"isPublicEvent || authenticationService.isLoggedIn() && selectedEvent != undefined\">\r\n    <h2>{{selectedEvent.evbrief}}</h2>\r\n    <div *ngIf=\"authenticationService.isLoggedIn() && attendence != undefined\">\r\n        <label for=\"attend\">I am attending</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"attendence.attending\" (click)=\"submit()\" name=\"attend\" value=\"true\" checked=\"checked\" />\r\n    </div>\r\n\r\n    <p><strong>Event Date:</strong> {{selectedEvent.evdate}}</p>\r\n    <p><strong>Time:</strong> {{selectedEvent.evtime}}</p>\r\n    <p><strong>Event Location:</strong> {{selectedEvent.evloc}}</p>\r\n    <p class=\"hidden\"><strong>Event Description:</strong> {{selectedEvent.evbriefdesc}}</p>\r\n    <div [innerHTML]=\"selectedEvent.evdetail\" class=\"cleaner\"></div>\r\n    <p class=\"hidden\">event public update{{selectedEvent.evpubdate}}</p>\r\n    <button class=\"btn\" routerLink=\"/home\" routerLinkActive=\"active\">Back</button>\r\n\r\n</div>"
+module.exports = "<div class=\"row\" *ngIf=\"!isPublicEvent && !authenticationService.isLoggedIn()\">\r\n    <div class=\"col-sm-6 col-sm-offset-3\">\r\n        <login></login>\r\n    </div>\r\n</div>\r\n\r\n<div *ngIf=\"isPublicEvent || authenticationService.isLoggedIn() && selectedEvent != undefined\">\r\n    <h2>{{selectedEvent.evbrief}}</h2>\r\n    <div *ngIf=\"authenticationService.isLoggedIn() && attendence != undefined\">\r\n        <label for=\"attend\" class=\"inline\">I am attending: </label>\r\n        <input type=\"checkbox\" class=\"checkbox inline\" [(ngModel)]=\"attendence.attending\" (click)=\"submit()\" name=\"attend\" value=\"true\" checked=\"checked\" />\r\n    </div>\r\n\r\n    <p><strong>Event Date:</strong> {{selectedEvent.evdate}}</p>\r\n    <p><strong>Time:</strong> {{selectedEvent.evtime}}</p>\r\n    <p><strong>Event Location:</strong> {{selectedEvent.evloc}}</p>\r\n    <p class=\"hidden\"><strong>Event Description:</strong> {{selectedEvent.evbriefdesc}}</p>\r\n    <div [innerHTML]=\"selectedEvent.evdetail\" class=\"cleaner\"></div>\r\n    <p class=\"hidden\">event public update{{selectedEvent.evpubdate}}</p>\r\n    <button class=\"btn\" routerLink=\"/home\" routerLinkActive=\"active\">Back</button>\r\n\r\n</div>"
 
 /***/ }),
 
