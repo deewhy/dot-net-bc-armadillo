@@ -40,5 +40,6 @@
     color: #ffec82;
 }
 
-
-
+.dropdown-menu {
+    min-width:400px;
+}
