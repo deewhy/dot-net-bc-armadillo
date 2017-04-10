@@ -3,16 +3,18 @@ import { AuthenticationService } from './authentication.service';
 import { Headers, Http, RequestOptions, Response } from '@angular/http';
 
 import { Member } from '../models/member';
-
+import { Subject } from '../abstracts/subject';
 @Injectable()
-export class MemberService {
+export class MemberService extends Subject {
 
     private URL = "http://dotnetbcbackend.azurewebsites.net/api/APIApplicationUsers";
+    private URL_GET = "http://dotnetbcbackend.azurewebsites.net/api/APIApplicationUsers/myprofile";
 
-    constructor(private http: Http, private authenticationService: AuthenticationService) {}
+    constructor(private http: Http, private authenticationService: AuthenticationService) {
+        super();
+    }
 
     registerMember(UserName: string, Password: string, ConfirmPassword: string, Email: string, FirstName: string, LastName: string, City: string, NotifyJobs: boolean): Promise<Member> {
-        //let creds = 'UserName=' + UserName + '&password=' + Password + '&grant_type=password' + '&ConfirmPassword=' + ConfirmPassword + '&Email=' + Email + '&FirstName='
         let headers = new Headers({
             'Content-Type': 'application/json',
             'UserName': UserName,
@@ -46,39 +48,47 @@ export class MemberService {
     }
 
     getLoggedInMember(): Promise<Member> {
-        //if (!this.authenticationService.isLoggedIn()) {
-            let m:Member = new Member();
-            m.City = "FakeTowne";
-            m.Created = new Date();
-            m.Email = "fake@fake.fake";
-            m.FirstName = "firstfakename";
-            m.LastName = "lastfakename";
-            m.isActive = true;
-            m.NotifiyJobs = true;
-            m.Password = "fake";
-            m.UserName = "fake";
-
-            return new Promise<Member>((resolve, reject) => {m; resolve(m);});
-        //}
-        /*
-        let headers = new Headers();
-        headers.append('Authorization', 'Bearer ' + this.authenticationService.getToken());
-        headers.append('content-type', 'application/json');
+        let headers = new Headers({
+            'UserName': this.authenticationService.getUsername(),
+            'Password': this.authenticationService.getPassword()
+        });
 
         let options = new RequestOptions({ headers: headers });
         
-        let member: Promise<Member> =  this.http.get(this.URL, options)
-               .toPromise()
-               .then(response => response.json())
-               .catch(this.handleError);
-               return member;
-               */
+        let member: Promise<Member> =  this.http.get(this.URL_GET, options)
+            .toPromise()
+            .then(response => response.json())
+            .catch(this.handleError);
+        return member;
+    }
+
+    updateMember(member: any): void {
+        console.log(member)
+        let headers = new Headers({
+            'Content-Type': 'application/json'
+        });
+
+        let body = {
+            'UserName': this.authenticationService.getUsername(),
+            'Password': this.authenticationService.getPassword(),
+            'Email': member.email,
+            'FirstName': member.firstName,
+            'LastName': member.lastName,
+            'City': member.city,
+            'NotifyJobs': member.notifyJobs
+        };
+        console.log(body);
+        let options = new RequestOptions({ headers: headers, body: body });
+        let response: Promise<any>;
+        response = this.http.put(this.URL_GET, body, options)
+            .toPromise()
+            .then(q => {this.notifyListeners();})
+            .catch(this.handleError);
     }
 
     private handleError(error: any): Promise<Response> {
         return new Promise<Response>((resolve, reject) => {
             resolve(error._body);
         });
-        //return Promise.reject(error.message || error);
     }
 }
