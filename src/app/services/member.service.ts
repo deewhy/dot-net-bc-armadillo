@@ -76,7 +76,6 @@ export class MemberService extends Subject {
             'City': member.city,
             'NotifyJobs': member.notifyJobs
         };
-        console.log(body);
         let options = new RequestOptions({ headers: headers, body: body });
         let response: Promise<any>;
         response = this.http.put(this.URL_GET, body, options)

@@ -158,7 +158,6 @@ var MemberService = (function (_super) {
             'City': member.city,
             'NotifyJobs': member.notifyJobs
         };
-        console.log(body);
         var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* RequestOptions */]({ headers: headers, body: body });
         var response;
         response = this.http.put(this.URL_GET, body, options)
