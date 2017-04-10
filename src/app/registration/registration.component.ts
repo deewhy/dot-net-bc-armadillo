@@ -52,7 +52,7 @@ export class RegistrationComponent implements OnInit {
     try {
       return this.error[error][0];
     } catch (e) {
-      return null
+      return null;
     }
   }
 }
