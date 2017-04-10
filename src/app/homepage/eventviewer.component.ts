@@ -61,13 +61,11 @@ export class EventViewerComponent implements OnInit, Observer  {
     }
 
     moveToPreviousAnchor(): void {
-        this.eventService.getEvents().then(e => this.setNewAnchorDayPrevious(e));
-        this.eventService.getEvents().then(e => this.setThisWeeksEvents(e));
+        this.eventService.getEvents().then(e => {this.setNewAnchorDayPrevious(e); this.eventService.getEvents().then(e => this.setThisWeeksEvents(e));});
     }
     
     moteToNextAnchor(): void {
-        this.eventService.getEvents().then(e => this.setNewAnchorDayNext(e));
-        this.eventService.getEvents().then(e => this.setThisWeeksEvents(e));
+        this.eventService.getEvents().then(e => {this.setNewAnchorDayNext(e); this.eventService.getEvents().then(e => this.setThisWeeksEvents(e));});
     }
     
     setNewAnchorDayPrevious(allEvents: Event[]): void {
