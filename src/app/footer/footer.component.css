@@ -23,3 +23,8 @@
 #footerSec1{
     text-align: right;
 }
+
+a:hover {
+    color: #ffec82;
+    text-decoration: none;
+}

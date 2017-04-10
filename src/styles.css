@@ -1,7 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 h2 {
+    font-family: 'Oswald', sans-serif;
     color: #105e8c;
+}
+
+h1, h3, h4, h5, h6 {
+    color: #105e8c;
+}
+
+hr {
+    color: #c1c1b9;
 }
 
 html, body{
@@ -11,6 +20,8 @@ html, body{
 body {
     background-color: #fffefa;
     color:#0c1521;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 a {
@@ -18,5 +29,5 @@ a {
 }
 
 a:hover {
-    color: #ffec82;
+    color: #c1c1b9;
 }
