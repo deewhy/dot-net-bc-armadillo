@@ -61,7 +61,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -166,7 +166,7 @@ var MemberService = (function () {
     return MemberService;
     var _a, _b;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -245,7 +245,7 @@ var JobPostingService = (function () {
     ], JobPostingService);
     return JobPostingService;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/jobposting.service.js.map
 
 /***/ }),
 
@@ -295,7 +295,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -330,7 +330,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -419,7 +419,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -442,7 +442,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -475,7 +475,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -588,7 +588,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -657,7 +657,7 @@ var EventDetailComponent = (function () {
     return EventDetailComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventdetail.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/eventdetail.component.js.map
 
 /***/ }),
 
@@ -690,7 +690,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -812,7 +812,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -845,7 +845,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -886,7 +886,7 @@ var JobsViewerComponent = (function () {
     return JobsViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobsviewer.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/jobsviewer.component.js.map
 
 /***/ }),
 
@@ -927,7 +927,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -973,7 +973,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -1017,7 +1017,7 @@ var MemberProfileComponent = (function () {
     return MemberProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -1031,7 +1031,7 @@ var JobPosting = (function () {
     }
     return JobPosting;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/jobposting.js.map
 
 /***/ }),
 
@@ -1045,7 +1045,7 @@ var Member = (function () {
     }
     return Member;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/member.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.js.map
 
 /***/ }),
 
@@ -1082,7 +1082,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -1156,7 +1156,7 @@ var RegistrationComponent = (function () {
     return RegistrationComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -1172,7 +1172,7 @@ var RegistrationComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
@@ -1312,7 +1312,7 @@ module.exports = "<form (ngSubmit)=\"onSubmit()\">\r\n    <input type=\"text\" c
 /***/ 697:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <form *ngIf=\"member != undefined\">\r\n        <div class=\"form-group\">\r\n            <label for=\"email\">Email</label>\r\n            <input type=\"email\" class=\"form-control\" name=\"email\" required=\"\" [(ngModel)]=\"member.email\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"password\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"password\" required=\"\" [(ngModel)]=\"member.password\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"firstname\">First Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"firstname\" required=\"\" [(ngModel)]=\"member.firstname\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"lastname\">Last Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"lastname\" required=\"\" [(ngModel)]=\"member.lastname\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"city\">City</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"city\" required=\"\" [(ngModel)]=\"member.city\">\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-danger\">Submit</button>\r\n    </form>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <form *ngIf=\"member != undefined\">\r\n        <div class=\"form-group\">\r\n            <label for=\"email\">Email</label>\r\n            <input type=\"email\" class=\"form-control\" name=\"email\" required=\"\" [(ngModel)]=\"member.Email\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"password\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"password\" required=\"\" [(ngModel)]=\"member.Password\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"firstname\">First Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"firstname\" required=\"\" [(ngModel)]=\"member.FirstName\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"lastname\">Last Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"lastname\" required=\"\" [(ngModel)]=\"member.LastName\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"city\">City</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"city\" required=\"\" [(ngModel)]=\"member.City\">\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-danger\">Submit</button>\r\n    </form>\r\n</div>"
 
 /***/ }),
 
