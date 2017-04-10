@@ -146,7 +146,6 @@ var MemberService = (function (_super) {
     };
     MemberService.prototype.updateMember = function (member) {
         var _this = this;
-        console.log(member);
         var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Headers */]({
             'Content-Type': 'application/json'
         });
@@ -159,7 +158,6 @@ var MemberService = (function (_super) {
             'City': member.city,
             'NotifyJobs': member.notifyJobs
         };
-        console.log(body);
         var options = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* RequestOptions */]({ headers: headers, body: body });
         var response;
         response = this.http.put(this.URL_GET, body, options)
@@ -1336,7 +1334,7 @@ module.exports = "<form (ngSubmit)=\"onSubmit()\">\r\n    <input type=\"text\" c
 /***/ 696:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <form *ngIf=\"member != undefined\" (ngSubmit)=\"submit()\">\r\n        <div class=\"form-group\">\r\n            <label for=\"email\">Email</label>\r\n            <input type=\"email\" class=\"form-control\" name=\"email\" required=\"\" [(ngModel)]=\"member.email\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"firstname\">First Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"firstname\" required=\"\" [(ngModel)]=\"member.firstName\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"lastname\">Last Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"lastname\" required=\"\" [(ngModel)]=\"member.lastName\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"city\">City</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"city\" required=\"\" [(ngModel)]=\"member.city\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"NotifyJobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"notifyJobs\" name=\"NotifyJobs\"autofocus=\"\" value=\"true\" checked=\"checked\" />\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-danger\">Submit</button>\r\n    </form>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <form *ngIf=\"member != undefined\" (ngSubmit)=\"submit()\">\r\n        <div class=\"form-group\">\r\n            <label for=\"email\">Email</label>\r\n            <input type=\"email\" class=\"form-control\" name=\"email\" required=\"\" [(ngModel)]=\"member.email\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"firstname\">First Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"firstname\" required=\"\" [(ngModel)]=\"member.firstName\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"lastname\">Last Name</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"lastname\" required=\"\" [(ngModel)]=\"member.lastName\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"city\">City</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"city\" required=\"\" [(ngModel)]=\"member.city\">\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"NotifyJobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"notifyJobs\" name=\"NotifyJobs\" autofocus=\"\" value=\"true\" checked=\"checked\" />\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-danger\">Submit</button>\r\n    </form>\r\n</div>"
 
 /***/ }),
 
