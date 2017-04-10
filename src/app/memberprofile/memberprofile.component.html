@@ -1,28 +1,24 @@
 <div class="container">
-    <form *ngIf="member != undefined" (ngSubmit)="onSubmit()">
+    <form *ngIf="member != undefined" (ngSubmit)="submit()">
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" required="" [(ngModel)]="member.Email">
+            <input type="email" class="form-control" name="email" required="" [(ngModel)]="member.email">
         </div>
         <div class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" name="firstname" required="" [(ngModel)]="member.FirstName">
+            <input type="text" class="form-control" name="firstname" required="" [(ngModel)]="member.firstName">
         </div>
         <div class="form-group">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" name="lastname" required="" [(ngModel)]="member.LastName">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" name="password" required="" [(ngModel)]="member.Password">
+            <input type="text" class="form-control" name="lastname" required="" [(ngModel)]="member.lastName">
         </div>
         <div class="form-group">
             <label for="city">City</label>
-            <input type="text" class="form-control" name="city" required="" [(ngModel)]="member.City">
+            <input type="text" class="form-control" name="city" required="" [(ngModel)]="member.city">
         </div>
         <div class="form-group">
             <label for="NotifyJobs">Notify About Jobs</label>
-        <input type="checkbox" class="checkbox" [(ngModel)]="NotifyJobs" name="NotifyJobs"autofocus="" value="true" checked="checked" />
+        <input type="checkbox" class="checkbox" [(ngModel)]="notifyJobs" name="NotifyJobs"autofocus="" value="true" checked="checked" />
         </div>
         <button type="submit" class="btn btn-danger">Submit</button>
     </form>

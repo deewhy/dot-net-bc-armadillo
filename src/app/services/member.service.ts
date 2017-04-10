@@ -62,25 +62,27 @@ export class MemberService extends Subject {
         return member;
     }
 
-    updateMember(UserName: string, Email: string, FirstName: string, LastName: string, City: string, NotifyJobs: boolean): void {
+    updateMember(member: any): void {
+        console.log(member)
         let headers = new Headers({
             'Content-Type': 'application/json'
         });
-        headers.append('Authorization', 'Bearer ' + this.authenticationService.getToken());
-        let body = {
-            'UserName': UserName,
-            'Email': Email,
-            'FirstName': FirstName,
-            'LastName': LastName,
-            'City': City,
-            'NotifyJobs': NotifyJobs
-        };
 
+        let body = {
+            'UserName': this.authenticationService.getUsername(),
+            'Password': this.authenticationService.getPassword(),
+            'Email': member.email,
+            'FirstName': member.firstName,
+            'LastName': member.lastName,
+            'City': member.city,
+            'NotifyJobs': member.notifyJobs
+        };
+        console.log(body);
         let options = new RequestOptions({ headers: headers, body: body });
         let response: Promise<any>;
-        response = this.http.put(this.URL_GET, options)
+        response = this.http.put(this.URL_GET, body, options)
             .toPromise()
-            .then(q => {this.notifyListeners(); console.log(q.json())})
+            .then(q => {this.notifyListeners();})
             .catch(this.handleError);
     }
 

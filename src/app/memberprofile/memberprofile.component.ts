@@ -27,6 +27,6 @@ export class MemberProfileComponent implements OnInit, Observer {
   }
 
   submit(): void {
-    this.memberService.updateMember(this.member.UserName, this.member.Email, this.member.FirstName, this.member.LastName, this.member.City, this.member.NotifiyJobs);
+    this.memberService.updateMember(this.member);
   }
 }
