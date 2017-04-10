@@ -16,6 +16,10 @@
             <label for="city">City</label>
             <input type="text" class="form-control" name="city" required="" [(ngModel)]="member.city">
         </div>
+        <div class="form-group">
+            <label for="NotifyJobs">Notify About Jobs</label>
+        <input type="checkbox" class="checkbox" [(ngModel)]="NotifyJobs" name="NotifyJobs"autofocus="" value="true" checked="checked" />
+        </div>
         <button type="submit" class="btn btn-danger">Submit</button>
     </form>
 </div>

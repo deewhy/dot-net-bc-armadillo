@@ -8,8 +8,7 @@ import { Subject } from '../abstracts/subject';
 export class MemberService extends Subject {
 
     private URL = "http://dotnetbcbackend.azurewebsites.net/api/APIApplicationUsers";
-    private URL_GET = "http://dotnetbcbackend.azurewebsites.net/api/APIApplicationUsers/username/";
-    private URL_UPDATE = "http://dotnetbcbackend.azurewebsites.net/api/APIApplicationUsers";
+    private URL_GET = "http://dotnetbcbackend.azurewebsites.net/api/APIApplicationUsers/myprofile";
 
     constructor(private http: Http, private authenticationService: AuthenticationService) {
         super();
@@ -49,33 +48,39 @@ export class MemberService extends Subject {
     }
 
     getLoggedInMember(): Promise<Member> {
-        let headers = new Headers();
-        headers.append('Authorization', 'Bearer ' + this.authenticationService.getToken());
-        headers.append('content-type', 'application/json');
+        let headers = new Headers({
+            'UserName': this.authenticationService.getUsername(),
+            'Password': this.authenticationService.getPassword()
+        });
 
         let options = new RequestOptions({ headers: headers });
         
-        let member: Promise<Member> =  this.http.get(this.URL_GET + this.authenticationService.getUsername(), options)
+        let member: Promise<Member> =  this.http.get(this.URL_GET, options)
             .toPromise()
             .then(response => response.json())
             .catch(this.handleError);
         return member;
     }
 
-    updateMember(UserName: string, Email: string, FirstName: string, LastName: string, City: string): void {
+    updateMember(UserName: string, Email: string, FirstName: string, LastName: string, City: string, NotifyJobs: boolean): void {
         let headers = new Headers({
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
+        });
+        headers.append('Authorization', 'Bearer ' + this.authenticationService.getToken());
+        let body = {
             'UserName': UserName,
             'Email': Email,
             'FirstName': FirstName,
             'LastName': LastName,
-            'City': City
-        });
-        let options = new RequestOptions({ headers: headers });
+            'City': City,
+            'NotifyJobs': NotifyJobs
+        };
+
+        let options = new RequestOptions({ headers: headers, body: body });
         let response: Promise<any>;
-        response = this.http.put(this.URL_UPDATE, options)
+        response = this.http.put(this.URL_GET, options)
             .toPromise()
-            .then(q => this.notifyListeners())
+            .then(q => {this.notifyListeners(); console.log(q.json())})
             .catch(this.handleError);
     }
 
