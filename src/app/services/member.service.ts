@@ -63,7 +63,6 @@ export class MemberService extends Subject {
     }
 
     updateMember(member: any): void {
-        console.log(member)
         let headers = new Headers({
             'Content-Type': 'application/json'
         });
