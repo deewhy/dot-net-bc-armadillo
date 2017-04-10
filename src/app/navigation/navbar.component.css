@@ -1,19 +1,45 @@
-#HeaderImg{
-    height: 80px;
-    width: 80%;
-}
-.navbar{
-    height: 100px;
-}
-.container-fluid {
-  text-align:center;
-  }
-.navbar-nav {
-    display:inline-block;
-    vertical-align: top;
-    padding: 25px 25px;
+.logo {
+    max-height: 75px;
+    max-width: 100%;
 }
 
-.nav ul{
-    margin:0;
+.navbar {
+    background-color: #0c1521;
+    width: 100%;
+    min-height: 100px;
+}
+
+.navbar-nav {
+    display:inline-block;
+    margin: 25px 10px;
+}
+
+.navbar-header {
+    min-height: 100px;
+}
+
+.navbar-header>button {
+    margin: 25px 10px;
+    height: 50px;
+}
+
+.container-fluid {
+  text-align:center;
+  min-height: 100px;
+}
+
+.nav>li {
+    height:100%;
+}
+
+.nav a {
+    color: #fffefa;
+}
+
+.nav a:hover {
+    color: #ffec82;
+}
+
+.dropdown-menu {
+    min-width:400px;
 }

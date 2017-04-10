@@ -1,21 +1,31 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" routerLink="/home" routerLinkActive="active"><img  id="HeaderImg" src="../../assets/images/dotnetbclogo.png"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapser" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
+                <img class="logo" src="/assets/images/dotnetbclogo.png" alt=".Net BC">
+            </a>
         </div>
-        <ul class="nav navbar-nav navbar-right text-center">
-            <li><a class="icon-bar" routerLink="/home" routerLinkActive="active">Home</a></li>
-            <li><a class="icon-bar" *ngIf="!authenticationService.isLoggedIn()" routerLink="/registration" routerLinkActive="active">Register</a></li>
-            <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" routerLink="/profile" routerLinkActive="active">Profile</a></li>
-            <li class="dropdown" *ngIf="!authenticationService.isLoggedIn()">
-                <a class="dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="cursor: pointer">
-                    Login
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <login></login>
-                </ul>
-            </li>
-            <li><a class="icon-bar" *ngIf="authenticationService.isLoggedIn()" (click)="authenticationService.logOut()" routerLink="/home" routerLinkActive="active">Logout</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="collapser">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                <li><a *ngIf="!authenticationService.isLoggedIn()" routerLink="/registration" routerLinkActive="active">Register</a></li>
+                <li><a *ngIf="authenticationService.isLoggedIn()" routerLink="/profile" routerLinkActive="active">Profile</a></li>
+                <li class="dropdown" *ngIf="!authenticationService.isLoggedIn()">
+                    <a class="dropdown-toggle" id="dropdownMenu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="cursor: pointer">
+                        Login
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <login></login>
+                    </ul>
+                </li>
+                <li><a *ngIf="authenticationService.isLoggedIn()" (click)="authenticationService.logOut()" routerLink="/home" routerLinkActive="active">Logout</a></li>
+            </ul>
+        </div>
     </div>
 </nav>

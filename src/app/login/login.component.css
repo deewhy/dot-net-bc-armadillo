@@ -1,0 +1,17 @@
+form {
+    margin: 10px;
+}
+
+input {
+    margin: 10px 0px;
+}
+
+button {
+    margin: 10px 0px;
+    background-color: #105e8c;
+    color: #fffefa;
+}
+
+button:hover {
+    color: #ffec82;
+}

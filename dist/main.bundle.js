@@ -61,7 +61,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -166,7 +166,7 @@ var MemberService = (function () {
     return MemberService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -245,7 +245,7 @@ var JobPostingService = (function () {
     ], JobPostingService);
     return JobPostingService;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/jobposting.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.service.js.map
 
 /***/ }),
 
@@ -295,7 +295,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -330,7 +330,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -419,7 +419,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -442,7 +442,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -475,7 +475,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -588,7 +588,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -657,7 +657,7 @@ var EventDetailComponent = (function () {
     return EventDetailComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/eventdetail.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventdetail.component.js.map
 
 /***/ }),
 
@@ -690,7 +690,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -812,7 +812,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -845,7 +845,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -886,7 +886,7 @@ var JobsViewerComponent = (function () {
     return JobsViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/jobsviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobsviewer.component.js.map
 
 /***/ }),
 
@@ -927,7 +927,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -973,7 +973,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -1017,7 +1017,7 @@ var MemberProfileComponent = (function () {
     return MemberProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -1031,7 +1031,7 @@ var JobPosting = (function () {
     }
     return JobPosting;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/jobposting.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.js.map
 
 /***/ }),
 
@@ -1045,7 +1045,7 @@ var Member = (function () {
     }
     return Member;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/member.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/member.js.map
 
 /***/ }),
 
@@ -1082,7 +1082,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -1156,7 +1156,7 @@ var RegistrationComponent = (function () {
     return RegistrationComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -1172,14 +1172,14 @@ var RegistrationComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/workspace/AspProject/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
 /***/ 678:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\r\n.container-fluid {\r\n    min-height: 100%;\r\n    margin: 0 auto -100px; \r\n    padding-bottom: 100px;\r\n}"
 
 /***/ }),
 
@@ -1193,7 +1193,7 @@ module.exports = ""
 /***/ 680:
 /***/ (function(module, exports) {
 
-module.exports = "\r\n.footer{\r\n    background: lightgray;\r\n    height: 100px;\r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    margin-left: 0;\r\n}\r\n\r\n#footerImg{\r\n    height: 50%;\r\n}\r\n\r\n#footerSec1{\r\n    height: 100%\r\n}\r\n\r\n"
+module.exports = ".logo {\r\n    max-height:100px;\r\n    max-width: 100%;\r\n}\r\n\r\n.icon {\r\n    max-height: 50px;\r\n}\r\n\r\n.footer{\r\n    background: #c1c1b9;\r\n    \r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    margin-left: 0;\r\n    padding: 10px;\r\n}\r\n\r\n#footerSec1{\r\n    text-align: right;\r\n}\r\n"
 
 /***/ }),
 
@@ -1228,7 +1228,7 @@ module.exports = ".carousel-inner div a img {\r\n    width: 200px;\r\n}\r\n\r\n.
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "form {\r\n    margin: 10px;\r\n}\r\n\r\ninput {\r\n    margin: 10px 0px;\r\n}\r\n\r\nbutton {\r\n    margin: 10px 0px;\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}\r\n\r\nbutton:hover {\r\n    color: #ffec82;\r\n}"
 
 /***/ }),
 
@@ -1242,7 +1242,7 @@ module.exports = ""
 /***/ 687:
 /***/ (function(module, exports) {
 
-module.exports = "#HeaderImg{\r\n    height: 80px;\r\n    width: 80%;\r\n}\r\n.navbar{\r\n    height: 100px;\r\n}\r\n.container-fluid {\r\n  text-align:center;\r\n  }\r\n.navbar-nav {\r\n    display:inline-block;\r\n    vertical-align: top;\r\n    padding: 25px 25px;\r\n}\r\n\r\n.nav ul{\r\n    margin:0;\r\n}\r\n"
+module.exports = ".logo {\r\n    max-height: 75px;\r\n    max-width: 100%;\r\n}\r\n\r\n.navbar {\r\n    background-color: #0c1521;\r\n    width: 100%;\r\n    min-height: 100px;\r\n}\r\n\r\n.navbar-nav {\r\n    display:inline-block;\r\n    margin: 25px 10px;\r\n}\r\n\r\n.navbar-header {\r\n    min-height: 100px;\r\n}\r\n\r\n.navbar-header>button {\r\n    margin: 25px 10px;\r\n    height: 50px;\r\n}\r\n\r\n.container-fluid {\r\n  text-align:center;\r\n  min-height: 100px;\r\n}\r\n\r\n.nav>li {\r\n    height:100%;\r\n}\r\n\r\n.nav a {\r\n    color: #fffefa;\r\n}\r\n\r\n.nav a:hover {\r\n    color: #ffec82;\r\n}\r\n\r\n.dropdown-menu {\r\n    min-width:400px;\r\n}"
 
 /***/ }),
 
@@ -1256,7 +1256,7 @@ module.exports = ""
 /***/ 689:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n    <nav-bar></nav-bar>\r\n\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<footer-bar ></footer-bar>\r\n\r\n"
+module.exports = "<nav-bar></nav-bar>\r\n<div class=\"container-fluid\">\r\n    <router-outlet></router-outlet>\r\n</div>\r\n<footer-bar ></footer-bar>\r\n\r\n"
 
 /***/ }),
 
@@ -1270,7 +1270,7 @@ module.exports = "<div class=\"row\" *ngIf=\"!isPublicEvent && !authenticationSe
 /***/ 691:
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"footer navbar-bottom\">\r\n    <div class=\"col-sm-4\" id=\"footerSec1\">\r\n      <!--  <span>Footer Picture</span> -->\r\n        <img  id=\"footerImg\" src=\"../../assets/images/dotnetbclogo.png\">\r\n    </div>\r\n    <div class=\"col-sm-4\">       \r\n        <span>\r\n            <p>\r\n                \r\n                .NET User Group of British Columbia\r\n                Mission: To provide a forum where developers can meet others of similar\r\n                interests and discuss .NET related topics facilitate the exchange of \r\n                knowledge, experience, information and ideas; and explore the progression\r\n                of .NET technology\r\n            </p>\r\n        </span>\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n        <span>Footer Members</span>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"footer navbar-bottom\">\r\n    <div class=\"col-sm-4\" id=\"footerSec1\">\r\n      <!--  <span>Footer Picture</span> -->\r\n        <img src=\"/assets/images/dotnetbclogo.png\" alt=\".Net BC\" class=\"logo\" />\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n        <p>.NET User Group of British Columbia</p>\r\n        <p>\r\n            <strong>Mission:</strong> To provide a forum where developers can meet others of similar interests and discuss .Net related topics; facilitate the exchange of knowledge, experience, information, &amp; ideas; and explore the progression of .Net technology.\r\n            </p>\r\n    </div>\r\n    <div class=\"col-sm-4\">\r\n        <p>\r\n            <strong>Email:</strong> <a href=\"mailto:members@netbc.ca\"> members@netbc.ca</a>\r\n        </p>\r\n        <a href=\"https://www.meetup.com/NET-User-Group-of-BC/\"><img src=\"/assets/images/meetuplogo.png\" class=\"icon\" /></a>\r\n        <a href=\"/\"><img src=\"/assets/images/rsslogo.png\" class=\"icon\" /></a>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -1284,7 +1284,7 @@ module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float:
 /***/ 693:
 /***/ (function(module, exports) {
 
-module.exports = "<div >\r\n    <div class=\"col-sm-9\"><event-viewer></event-viewer></div>\r\n    <div class=\"col-sm-3\">\r\n        <div class=\"col-xs-12\"><sponsor-viewer></sponsor-viewer>\r\n        <div class=\"col-xs-12\"><jobs-viewer></jobs-viewer></div>\r\n    </div>\r\n</div>"
+module.exports = "<div >\r\n    <div class=\"col-sm-9\">\r\n        <event-viewer></event-viewer>\r\n    </div>\r\n    <div class=\"col-sm-3\">\r\n        <div class=\"col-xs-12\">\r\n            <sponsor-viewer></sponsor-viewer>\r\n        </div>\r\n        <div class=\"col-xs-12\">\r\n            <jobs-viewer></jobs-viewer>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -1305,7 +1305,7 @@ module.exports = "<h2>Sponsors</h2>\r\n<div id=\"myCarousel\" class=\"carousel s
 /***/ 696:
 /***/ (function(module, exports) {
 
-module.exports = "<form (ngSubmit)=\"onSubmit()\">\r\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n    <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n    <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Login</button>\r\n</form>"
+module.exports = "<form (ngSubmit)=\"onSubmit()\">\r\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" placeholder=\"Enter Username\" name=\"username\" required=\"\" autofocus=\"\" />\r\n    <input type=\"password\" class=\"form-control\" [(ngModel)]=\"password\" placeholder=\"Enter Password\" name=\"password\" required=\"\" />\r\n    <button class=\"btn btn-lg btn-block\" type=\"submit\">Login</button>\r\n</form>"
 
 /***/ }),
 
@@ -1319,7 +1319,7 @@ module.exports = "<div class=\"container\">\r\n    <form *ngIf=\"member != undef
 /***/ 698:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n            <a class=\"navbar-brand\" routerLink=\"/home\" routerLinkActive=\"active\"><img  id=\"HeaderImg\" src=\"../../assets/images/dotnetbclogo.png\"></a>\r\n        </div>\r\n        <ul class=\"nav navbar-nav navbar-right text-center\">\r\n            <li><a class=\"icon-bar\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a></li>\r\n            <li><a class=\"icon-bar\" *ngIf=\"!authenticationService.isLoggedIn()\" routerLink=\"/registration\" routerLinkActive=\"active\">Register</a></li>\r\n            <li><a class=\"icon-bar\" *ngIf=\"authenticationService.isLoggedIn()\" routerLink=\"/profile\" routerLinkActive=\"active\">Profile</a></li>\r\n            <li class=\"dropdown\" *ngIf=\"!authenticationService.isLoggedIn()\">\r\n                <a class=\"dropdown-toggle\"  id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\" style=\"cursor: pointer\">\r\n                    Login\r\n                </a>\r\n                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\r\n                    <login></login>\r\n                </ul>\r\n            </li>\r\n            <li><a class=\"icon-bar\" *ngIf=\"authenticationService.isLoggedIn()\" (click)=\"authenticationService.logOut()\" routerLink=\"/home\" routerLinkActive=\"active\">Logout</a></li>\r\n        </ul>\r\n    </div>\r\n</nav>"
+module.exports = "<nav class=\"navbar navbar-inverse navbar-static-top\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#collapser\" aria-expanded=\"false\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" routerLink=\"/home\" routerLinkActive=\"active\">\r\n                <img class=\"logo\" src=\"/assets/images/dotnetbclogo.png\" alt=\".Net BC\">\r\n            </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"collapser\">\r\n            <ul class=\"nav navbar-nav navbar-right\">\r\n                <li><a routerLink=\"/home\" routerLinkActive=\"active\">Home</a></li>\r\n                <li><a *ngIf=\"!authenticationService.isLoggedIn()\" routerLink=\"/registration\" routerLinkActive=\"active\">Register</a></li>\r\n                <li><a *ngIf=\"authenticationService.isLoggedIn()\" routerLink=\"/profile\" routerLinkActive=\"active\">Profile</a></li>\r\n                <li class=\"dropdown\" *ngIf=\"!authenticationService.isLoggedIn()\">\r\n                    <a class=\"dropdown-toggle\" id=\"dropdownMenu1\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\" style=\"cursor: pointer\">\r\n                        Login\r\n                    </a>\r\n                    <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\r\n                        <login></login>\r\n                    </ul>\r\n                </li>\r\n                <li><a *ngIf=\"authenticationService.isLoggedIn()\" (click)=\"authenticationService.logOut()\" routerLink=\"/home\" routerLinkActive=\"active\">Logout</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>"
 
 /***/ }),
 

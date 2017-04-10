@@ -16,6 +16,6 @@ COLOURS:
 - #105e8c - blue
 - #c1c1b9 - grey
 - #ffec82 - yellow
-- #fffdf2 - white
+- #fffefa - white
 
 Before making a pull request, run "ng build" so that the project will deploy.
