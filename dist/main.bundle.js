@@ -61,7 +61,7 @@ var EventService = (function () {
     return EventService;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/event.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/event.service.js.map
 
 /***/ }),
 
@@ -166,7 +166,7 @@ var MemberService = (function () {
     return MemberService;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/member.service.js.map
 
 /***/ }),
 
@@ -245,7 +245,7 @@ var JobPostingService = (function () {
     ], JobPostingService);
     return JobPostingService;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/jobposting.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.service.js.map
 
 /***/ }),
 
@@ -295,7 +295,7 @@ var SponsorService = (function () {
     return SponsorService;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsor.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsor.service.js.map
 
 /***/ }),
 
@@ -330,7 +330,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/main.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/main.js.map
 
 /***/ }),
 
@@ -419,7 +419,7 @@ var AuthenticationService = (function (_super) {
     return AuthenticationService;
     var _a, _b;
 }(__WEBPACK_IMPORTED_MODULE_4__abstracts_subject__["a" /* Subject */]));
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/authentication.service.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/authentication.service.js.map
 
 /***/ }),
 
@@ -442,7 +442,7 @@ var Subject = (function () {
     };
     return Subject;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/subject.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/subject.js.map
 
 /***/ }),
 
@@ -475,7 +475,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.component.js.map
 
 /***/ }),
 
@@ -588,7 +588,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/app.module.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/app.module.js.map
 
 /***/ }),
 
@@ -657,7 +657,7 @@ var EventDetailComponent = (function () {
     return EventDetailComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/eventdetail.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventdetail.component.js.map
 
 /***/ }),
 
@@ -690,7 +690,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/footer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/footer.component.js.map
 
 /***/ }),
 
@@ -812,7 +812,7 @@ var EventViewerComponent = (function () {
     return EventViewerComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/eventviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/eventviewer.component.js.map
 
 /***/ }),
 
@@ -845,7 +845,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/home.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/home.component.js.map
 
 /***/ }),
 
@@ -886,7 +886,7 @@ var JobsViewerComponent = (function () {
     return JobsViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/jobsviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobsviewer.component.js.map
 
 /***/ }),
 
@@ -927,7 +927,7 @@ var SponsorViewerComponent = (function () {
     return SponsorViewerComponent;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/sponsorviewer.component.js.map
 
 /***/ }),
 
@@ -973,7 +973,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/login.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/login.component.js.map
 
 /***/ }),
 
@@ -1017,7 +1017,7 @@ var MemberProfileComponent = (function () {
     return MemberProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/memberprofile.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/memberprofile.component.js.map
 
 /***/ }),
 
@@ -1031,7 +1031,7 @@ var JobPosting = (function () {
     }
     return JobPosting;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/jobposting.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/jobposting.js.map
 
 /***/ }),
 
@@ -1045,7 +1045,7 @@ var Member = (function () {
     }
     return Member;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/member.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/member.js.map
 
 /***/ }),
 
@@ -1082,7 +1082,7 @@ var NavBarComponent = (function () {
     return NavBarComponent;
     var _a;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/navbar.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/navbar.component.js.map
 
 /***/ }),
 
@@ -1156,7 +1156,7 @@ var RegistrationComponent = (function () {
     return RegistrationComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/registration.component.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/registration.component.js.map
 
 /***/ }),
 
@@ -1172,7 +1172,7 @@ var RegistrationComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=c:/Git/dot-net-bc-armadillo/src/environment.js.map
+//# sourceMappingURL=D:/4870/DotNetBC/dot-net-bc-armadillo/src/environment.js.map
 
 /***/ }),
 
@@ -1193,14 +1193,14 @@ module.exports = ""
 /***/ 680:
 /***/ (function(module, exports) {
 
-module.exports = ".logo {\r\n    max-height:100px;\r\n    max-width: 100%;\r\n}\r\n\r\n.icon {\r\n    max-height: 50px;\r\n}\r\n\r\n.footer{\r\n    background: #c1c1b9;\r\n    \r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    margin-left: 0;\r\n    padding: 10px;\r\n}\r\n\r\n#footerSec1{\r\n    text-align: right;\r\n}\r\n"
+module.exports = ".logo {\r\n    max-height:100px;\r\n    max-width: 100%;\r\n}\r\n\r\n.icon {\r\n    max-height: 50px;\r\n}\r\n\r\n.footer{\r\n    background: #c1c1b9;\r\n    \r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    margin-left: 0;\r\n    padding: 10px;\r\n}\r\n\r\n#footerSec1{\r\n    text-align: right;\r\n}\r\n\r\na:hover {\r\n    color: #ffec82;\r\n    text-decoration: none;\r\n}"
 
 /***/ }),
 
 /***/ 681:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "button {\r\n    margin: 5px 0px;\r\n    background-color: #ffec82;\r\n    color: #0c1521;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}"
 
 /***/ }),
 
@@ -1249,7 +1249,7 @@ module.exports = ".logo {\r\n    max-height: 75px;\r\n    max-width: 100%;\r\n}\
 /***/ 688:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "form {\r\n    margin: 10px;\r\n}\r\n\r\ninput {\r\n    margin: 5px 0px;\r\n}\r\n\r\nbutton {\r\n    margin: 15px 0px;\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}\r\n\r\nbutton:hover {\r\n    color: #ffec82;\r\n}\r\n\r\ninput[type=\"checkbox\"] {\r\n    height: 20px;\r\n}"
 
 /***/ }),
 
@@ -1263,7 +1263,7 @@ module.exports = "<nav-bar></nav-bar>\r\n<div class=\"container-fluid\">\r\n    
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" *ngIf=\"!isPublicEvent && !authenticationService.isLoggedIn()\">\r\n    <div class=\"col-sm-6 col-sm-offset-3\">\r\n        <login></login>\r\n    </div>\r\n</div>\r\n\r\n<div *ngIf=\"isPublicEvent || authenticationService.isLoggedIn() && selectedEvent != undefined\">\r\n    <h4>{{selectedEvent.evbrief}}</h4>\r\n\r\n <!--   <p>id: {{selectedEvent.evid}}</p>\r\n    <p>daytime: {{selectedEvent.evdayt}}</p> -->\r\n\r\n    <p>event date: {{selectedEvent.evdate}}</p>\r\n    <p>event time: {{selectedEvent.evtime}}</p>\r\n    <p>event location: {{selectedEvent.evloc}}</p>\r\n    <p>event description: {{selectedEvent.evbreifdesc}}</p>\r\n    <div [innerHTML]=\"selectedEvent.evdetail\"></div>\r\n    <p>event public update{{selectedEvent.evpubdate}}</p>\r\n\r\n</div>"
+module.exports = "<div class=\"row\" *ngIf=\"!isPublicEvent && !authenticationService.isLoggedIn()\">\r\n    <div class=\"col-sm-6 col-sm-offset-3\">\r\n        <login></login>\r\n    </div>\r\n</div>\r\n\r\n<div *ngIf=\"isPublicEvent || authenticationService.isLoggedIn() && selectedEvent != undefined\">\r\n    <h2>{{selectedEvent.evbrief}}</h2>\r\n\r\n <!--   <p>id: {{selectedEvent.evid}}</p>\r\n    <p>daytime: {{selectedEvent.evdayt}}</p> -->\r\n\r\n    <p><strong>Event Date:</strong> {{selectedEvent.evdate}}</p>\r\n    <p><strong>Time:</strong> {{selectedEvent.evtime}}</p>\r\n    <p><strong>Event Location:</strong> {{selectedEvent.evloc}}</p>\r\n    <p class=\"hidden\"><strong>Event Description:</strong> {{selectedEvent.evbriefdesc}}</p>\r\n    <div [innerHTML]=\"selectedEvent.evdetail\" class=\"cleaner\"></div>\r\n    <p class=\"hidden\">event public update{{selectedEvent.evpubdate}}</p>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1277,7 +1277,7 @@ module.exports = "<div class=\"footer navbar-bottom\">\r\n    <div class=\"col-s
 /***/ 692:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float: left\" (click)=\"moveToPreviousAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> < </button>\r\n<button class=\"btn btn-sm\" style=\"float: right\" (click)=\"moteToNextAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> > </button>\r\n<table class=\"table table-striped\">\r\n  <tr *ngFor=\"let event of events\">\r\n    <td>\r\n      {{event.evbrief}}\r\n      <br/>\r\n    <!--  <div [innerHTML]=\"event.evdetail\"></div>-->\r\n    </td>\r\n    <td>\r\n      {{event.evdate}}\r\n      <br/>\r\n    </td>\r\n    <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->\r\n    <td>\r\n      <button type=\"button\" class=\"btn btn-warning btn-sm\" [routerLink]=\"['/event', event.evid]\" routerLinkActive=\"active\">details</button>\r\n    </td>\r\n  </tr>\r\n</table>"
+module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float: left\" (click)=\"moveToPreviousAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> < </button>\r\n<button class=\"btn btn-sm\" style=\"float: right\" (click)=\"moteToNextAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> > </button>\r\n<table class=\"table table-striped\">\r\n  <tr *ngFor=\"let event of events\">\r\n    <td>\r\n      {{event.evbrief}}\r\n      <br/>\r\n    <!--  <div [innerHTML]=\"event.evdetail\"></div>-->\r\n    </td>\r\n    <td>\r\n      {{event.evdate}}\r\n      <br/>\r\n    </td>\r\n    <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->\r\n    <td>\r\n      <button type=\"button\" class=\"btn btn-sm\" [routerLink]=\"['/event', event.evid]\" routerLinkActive=\"active\">details</button>\r\n    </td>\r\n  </tr>\r\n</table>"
 
 /***/ }),
 
@@ -1326,7 +1326,7 @@ module.exports = "<nav class=\"navbar navbar-inverse navbar-static-top\">\r\n   
 /***/ 699:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <form (ngSubmit)=\"onSubmit()\">\r\n        \r\n        <label for=\"UserName\">UserName</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"UserName\" placeholder=\"Enter UserName\" name=\"UserName\" required=\"\" autofocus=\"\" />\r\n        <h4>{{getError(\"UserName\")}}</h4>\r\n        <label for=\"Password\">Password</label>\r\n        <input type=\"Password\" class=\"form-control\" [(ngModel)]=\"Password\" placeholder=\"Enter Password\" name=\"Password\" required=\"\" />\r\n        <h4>{{getError(\"Password\")}}</h4>\r\n        <label for=\"ConfirmPassword\">Confirm Password</label>\r\n        <input type=\"Password\" class=\"form-control\" [(ngModel)]=\"ConfirmPassword\" placeholder=\"Enter Password\" name=\"ConfirmPassword\" required=\"\" />\r\n        <h4>{{getError(\"ConfirmPassword\")}}</h4>\r\n        <label for=\"Email\">Email</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Email\" placeholder=\"Enter Email Address\" name=\"Email\" required=\"\" autofocus=\"\" />\r\n        <h4>{{getError(\"Email\")}}</h4>\r\n        <label for=\"FirstName\">First Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"FirstName\" placeholder=\"Enter First Name\" name=\"FirstName\" required=\"\" autofocus=\"\" />\r\n        <label for=\"LastName\">Last Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"LastName\" placeholder=\"Enter Last Name\" name=\"LastName\" required=\"\" autofocus=\"\" />\r\n        <label for=\"City\">City</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"City\" placeholder=\"Enter City\" name=City required=\"\" autofocus=\"\" />\r\n        <label for=\"NotifyJobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"NotifyJobs\" name=\"NotifyJobs\"autofocus=\"\" value=\"true\" checked=\"checked\" />\r\n        <h4 *ngIf=\"problem\">There was a problem creating your account</h4>\r\n        <br />\r\n        <button class=\"btn btn-lg btn-danger btn-block\" type=\"submit\">Register</button>\r\n    </form>\r\n</div>  "
+module.exports = "<div class=\"container\">\r\n    <form (ngSubmit)=\"onSubmit()\">\r\n        \r\n        <label for=\"UserName\">Username</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"UserName\" placeholder=\"Enter Username\" name=\"UserName\" required=\"\" autofocus=\"\" />\r\n        <h4>{{getError(\"UserName\")}}</h4>\r\n        <label for=\"Password\">Password</label>\r\n        <input type=\"Password\" class=\"form-control\" [(ngModel)]=\"Password\" placeholder=\"Enter Password\" name=\"Password\" required=\"\" />\r\n        <h4>{{getError(\"Password\")}}</h4>\r\n        <label for=\"ConfirmPassword\">Confirm Password</label>\r\n        <input type=\"Password\" class=\"form-control\" [(ngModel)]=\"ConfirmPassword\" placeholder=\"Confirm Password\" name=\"ConfirmPassword\" required=\"\" />\r\n        <h4>{{getError(\"ConfirmPassword\")}}</h4>\r\n        <label for=\"Email\">Email</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"Email\" placeholder=\"Enter Email Address\" name=\"Email\" required=\"\" autofocus=\"\" />\r\n        <h4>{{getError(\"Email\")}}</h4>\r\n        <label for=\"FirstName\">First Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"FirstName\" placeholder=\"Enter First Name\" name=\"FirstName\" required=\"\" autofocus=\"\" />\r\n        <label for=\"LastName\">Last Name</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"LastName\" placeholder=\"Enter Last Name\" name=\"LastName\" required=\"\" autofocus=\"\" />\r\n        <label for=\"City\">City</label>\r\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"City\" placeholder=\"Enter City\" name=City required=\"\" autofocus=\"\" />\r\n        <label for=\"NotifyJobs\">Notify About Jobs</label>\r\n        <input type=\"checkbox\" class=\"checkbox\" [(ngModel)]=\"NotifyJobs\" name=\"NotifyJobs\"autofocus=\"\" value=\"true\" checked=\"checked\" />\r\n        <h4 *ngIf=\"problem\">There was a problem creating your account.</h4>\r\n        <button class=\"btn btn-lg btn-block\" type=\"submit\">Register</button>\r\n    </form>\r\n</div>  "
 
 /***/ }),
 

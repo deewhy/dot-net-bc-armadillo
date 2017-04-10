@@ -1,14 +1,14 @@
 <div class="container">
     <form (ngSubmit)="onSubmit()">
         
-        <label for="UserName">UserName</label>
-        <input type="text" class="form-control" [(ngModel)]="UserName" placeholder="Enter UserName" name="UserName" required="" autofocus="" />
+        <label for="UserName">Username</label>
+        <input type="text" class="form-control" [(ngModel)]="UserName" placeholder="Enter Username" name="UserName" required="" autofocus="" />
         <h4>{{getError("UserName")}}</h4>
         <label for="Password">Password</label>
         <input type="Password" class="form-control" [(ngModel)]="Password" placeholder="Enter Password" name="Password" required="" />
         <h4>{{getError("Password")}}</h4>
         <label for="ConfirmPassword">Confirm Password</label>
-        <input type="Password" class="form-control" [(ngModel)]="ConfirmPassword" placeholder="Enter Password" name="ConfirmPassword" required="" />
+        <input type="Password" class="form-control" [(ngModel)]="ConfirmPassword" placeholder="Confirm Password" name="ConfirmPassword" required="" />
         <h4>{{getError("ConfirmPassword")}}</h4>
         <label for="Email">Email</label>
         <input type="text" class="form-control" [(ngModel)]="Email" placeholder="Enter Email Address" name="Email" required="" autofocus="" />
@@ -21,8 +21,7 @@
         <input type="text" class="form-control" [(ngModel)]="City" placeholder="Enter City" name=City required="" autofocus="" />
         <label for="NotifyJobs">Notify About Jobs</label>
         <input type="checkbox" class="checkbox" [(ngModel)]="NotifyJobs" name="NotifyJobs"autofocus="" value="true" checked="checked" />
-        <h4 *ngIf="problem">There was a problem creating your account</h4>
-        <br />
-        <button class="btn btn-lg btn-danger btn-block" type="submit">Register</button>
+        <h4 *ngIf="problem">There was a problem creating your account.</h4>
+        <button class="btn btn-lg btn-block" type="submit">Register</button>
     </form>
 </div>  

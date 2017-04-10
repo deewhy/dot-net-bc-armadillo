@@ -1,0 +1,21 @@
+form {
+    margin: 10px;
+}
+
+input {
+    margin: 5px 0px;
+}
+
+button {
+    margin: 15px 0px;
+    background-color: #105e8c;
+    color: #fffefa;
+}
+
+button:hover {
+    color: #ffec82;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+}
