@@ -29,15 +29,5 @@ a {
 }
 
 a:hover {
-    color: #ffec82;
-}
-
-button {
-    margin: 10px 0px;
-    background-color: #105e8c;
-    color: #fffefa;
-}
-
-button:hover {
-    color: #ffec82;
+    color: #c1c1b9;
 }

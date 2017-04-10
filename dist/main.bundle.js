@@ -1193,14 +1193,14 @@ module.exports = ""
 /***/ 680:
 /***/ (function(module, exports) {
 
-module.exports = ".logo {\r\n    max-height:100px;\r\n    max-width: 100%;\r\n}\r\n\r\n.icon {\r\n    max-height: 50px;\r\n}\r\n\r\n.footer{\r\n    background: #c1c1b9;\r\n    \r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    margin-left: 0;\r\n    padding: 10px;\r\n}\r\n\r\n#footerSec1{\r\n    text-align: right;\r\n}\r\n"
+module.exports = ".logo {\r\n    max-height:100px;\r\n    max-width: 100%;\r\n}\r\n\r\n.icon {\r\n    max-height: 50px;\r\n}\r\n\r\n.footer{\r\n    background: #c1c1b9;\r\n    \r\n    max-height: 100%;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    margin-left: 0;\r\n    padding: 10px;\r\n}\r\n\r\n#footerSec1{\r\n    text-align: right;\r\n}\r\n\r\na:hover {\r\n    color: #ffec82;\r\n    text-decoration: none;\r\n}"
 
 /***/ }),
 
 /***/ 681:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "button {\r\n    margin: 5px 0px;\r\n    background-color: #ffec82;\r\n    color: #0c1521;\r\n}\r\n\r\nbutton:hover {\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}"
 
 /***/ }),
 
@@ -1277,7 +1277,7 @@ module.exports = "<div class=\"footer navbar-bottom\">\r\n    <div class=\"col-s
 /***/ 692:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float: left\" (click)=\"moveToPreviousAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> < </button>\r\n<button class=\"btn btn-sm\" style=\"float: right\" (click)=\"moteToNextAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> > </button>\r\n<table class=\"table table-striped\">\r\n  <tr *ngFor=\"let event of events\">\r\n    <td>\r\n      {{event.evbrief}}\r\n      <br/>\r\n    <!--  <div [innerHTML]=\"event.evdetail\"></div>-->\r\n    </td>\r\n    <td>\r\n      {{event.evdate}}\r\n      <br/>\r\n    </td>\r\n    <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->\r\n    <td>\r\n      <button type=\"button\" class=\"btn btn-warning btn-sm\" [routerLink]=\"['/event', event.evid]\" routerLinkActive=\"active\">details</button>\r\n    </td>\r\n  </tr>\r\n</table>"
+module.exports = "<h2>Events</h2>\r\n<button class=\"btn btn-sm\" style=\"float: left\" (click)=\"moveToPreviousAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> < </button>\r\n<button class=\"btn btn-sm\" style=\"float: right\" (click)=\"moteToNextAnchor()\" *ngIf=\"authenticationService.isLoggedIn()\"> > </button>\r\n<table class=\"table table-striped\">\r\n  <tr *ngFor=\"let event of events\">\r\n    <td>\r\n      {{event.evbrief}}\r\n      <br/>\r\n    <!--  <div [innerHTML]=\"event.evdetail\"></div>-->\r\n    </td>\r\n    <td>\r\n      {{event.evdate}}\r\n      <br/>\r\n    </td>\r\n    <!-- | date: 'EEEE MMMM d, y h:mm a'}}</td> -->\r\n    <td>\r\n      <button type=\"button\" class=\"btn btn-sm\" [routerLink]=\"['/event', event.evid]\" routerLinkActive=\"active\">details</button>\r\n    </td>\r\n  </tr>\r\n</table>"
 
 /***/ }),
 
