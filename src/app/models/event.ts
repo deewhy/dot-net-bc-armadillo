@@ -5,7 +5,7 @@ export class Event {
     evtime: string;
     evloc: string;
     evbrief: string;
-    evbreifdesc: string;
+    evbriefdesc: string;
     evdetail: string;
     evpubdate: Date;
 }

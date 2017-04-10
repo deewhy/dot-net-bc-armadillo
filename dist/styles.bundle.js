@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__(676)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n\r\nh2 {\r\n    font-family: 'Oswald', sans-serif;\r\n    color: #105e8c;\r\n}\r\n\r\nh4 {\r\n    color: #105e8c;\r\n}\r\n\r\nhtml, body{\r\n    height: 100%;\r\n}\r\n\r\nbody {\r\n    background-color: #fffefa;\r\n    color:#0c1521;\r\n    font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\r\n    font-size: 14px;\r\n}\r\n\r\na {\r\n    color: #105e8c;\r\n}\r\n\r\na:hover {\r\n    color: #ffec82;\r\n}", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\n\r\nh2 {\r\n    font-family: 'Oswald', sans-serif;\r\n    color: #105e8c;\r\n}\r\n\r\nh1, h3, h4, h5, h6 {\r\n    color: #105e8c;\r\n}\r\n\r\nhr {\r\n    color: #c1c1b9;\r\n}\r\n\r\nhtml, body{\r\n    height: 100%;\r\n}\r\n\r\nbody {\r\n    background-color: #fffefa;\r\n    color:#0c1521;\r\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n    font-size: 14px;\r\n}\r\n\r\na {\r\n    color: #105e8c;\r\n}\r\n\r\na:hover {\r\n    color: #ffec82;\r\n}\r\n\r\nbutton {\r\n    margin: 10px 0px;\r\n    background-color: #105e8c;\r\n    color: #fffefa;\r\n}\r\n\r\nbutton:hover {\r\n    color: #ffec82;\r\n}", ""]);
 
 // exports
 

@@ -5,8 +5,12 @@ h2 {
     color: #105e8c;
 }
 
-h4 {
+h1, h3, h4, h5, h6 {
     color: #105e8c;
+}
+
+hr {
+    color: #c1c1b9;
 }
 
 html, body{
@@ -16,7 +20,7 @@ html, body{
 body {
     background-color: #fffefa;
     color:#0c1521;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -25,5 +29,15 @@ a {
 }
 
 a:hover {
+    color: #ffec82;
+}
+
+button {
+    margin: 10px 0px;
+    background-color: #105e8c;
+    color: #fffefa;
+}
+
+button:hover {
     color: #ffec82;
 }

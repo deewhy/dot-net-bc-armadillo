@@ -5,16 +5,16 @@
 </div>
 
 <div *ngIf="isPublicEvent || authenticationService.isLoggedIn() && selectedEvent != undefined">
-    <h4>{{selectedEvent.evbrief}}</h4>
+    <h2>{{selectedEvent.evbrief}}</h2>
 
  <!--   <p>id: {{selectedEvent.evid}}</p>
     <p>daytime: {{selectedEvent.evdayt}}</p> -->
 
-    <p>event date: {{selectedEvent.evdate}}</p>
-    <p>event time: {{selectedEvent.evtime}}</p>
-    <p>event location: {{selectedEvent.evloc}}</p>
-    <p>event description: {{selectedEvent.evbreifdesc}}</p>
-    <div [innerHTML]="selectedEvent.evdetail"></div>
-    <p>event public update{{selectedEvent.evpubdate}}</p>
+    <p><strong>Event Date:</strong> {{selectedEvent.evdate}}</p>
+    <p><strong>Time:</strong> {{selectedEvent.evtime}}</p>
+    <p><strong>Event Location:</strong> {{selectedEvent.evloc}}</p>
+    <p class="hidden"><strong>Event Description:</strong> {{selectedEvent.evbriefdesc}}</p>
+    <div [innerHTML]="selectedEvent.evdetail" class="cleaner"></div>
+    <p class="hidden">event public update{{selectedEvent.evpubdate}}</p>
 
 </div>
