@@ -7,8 +7,8 @@
 <div *ngIf="isPublicEvent || authenticationService.isLoggedIn() && selectedEvent != undefined">
     <h2>{{selectedEvent.evbrief}}</h2>
     <div *ngIf="authenticationService.isLoggedIn() && attendence != undefined">
-        <label for="attend">I am attending</label>
-        <input type="checkbox" class="checkbox" [(ngModel)]="attendence.attending" (click)="submit()" name="attend" value="true" checked="checked" />
+        <label for="attend" class="inline">I am attending: </label>
+        <input type="checkbox" class="checkbox inline" [(ngModel)]="attendence.attending" (click)="submit()" name="attend" value="true" checked="checked" />
     </div>
 
     <p><strong>Event Date:</strong> {{selectedEvent.evdate}}</p>

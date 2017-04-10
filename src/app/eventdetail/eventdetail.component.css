@@ -1,0 +1,18 @@
+button {
+    margin: 15px 0px;
+    background-color: #ffec82;
+    color: #0c1521;
+}
+
+button:hover {
+    background-color: #105e8c;
+    color: #fffefa;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+}
+
+input {
+    margin: 5px 0px;
+}
