@@ -11,10 +11,16 @@
 
 .navbar-nav {
     display:inline-block;
+    margin: 25px 10px;
 }
 
 .navbar-header {
     min-height: 100px;
+}
+
+.navbar-header>button {
+    margin: 25px 10px;
+    height: 50px;
 }
 
 .container-fluid {
