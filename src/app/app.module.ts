@@ -21,6 +21,7 @@ import { SponsorService } from './services/sponsor.service';
 import { AuthenticationService } from './services/authentication.service';
 import { MemberService } from './services/member.service';
 import { JobPostingService } from './services/jobposting.service';
+import { EventAttendenceService } from './services/eventattendence.service';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { JobPostingService } from './services/jobposting.service';
     SponsorService,
     AuthenticationService,
     MemberService,
-    JobPostingService
+    JobPostingService,
+    EventAttendenceService
   ],
   bootstrap: [AppComponent]
 })

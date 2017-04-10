@@ -83,7 +83,7 @@ export class MemberService extends Subject {
             .then(q => {this.notifyListeners();})
             .catch(this.handleError);
     }
-
+    
     private handleError(error: any): Promise<Response> {
         return new Promise<Response>((resolve, reject) => {
             resolve(error._body);
